@@ -1,5 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Calendar } from "lucide-react";
+import { MapPin, Calendar } from "lucide-react";
 
 const portraitImageUrl = "https://avatars.githubusercontent.com/u/124005183?v=4";
 
@@ -46,18 +45,9 @@ const SimpleHero = () => {
               Jackson Maroon
             </h1>
             <p id="hero-summary" className="text-lg text-muted-foreground sm:text-xl">
-              Product Manager & AI Enthusiast with experience at Kearney, NIH, and Washington &amp; Lee. I shape
-              user-focused, data-driven products that deliver measurable impact.
+              Business Strategist with experience at Kearney, NIH, and Washington &amp; Lee. I combine analytical
+              rigor, user insights, and data to solve complex problems and deliver measurable outcomes.
             </p>
-          </div>
-
-          <div className="flex flex-wrap items-center justify-center gap-3 md:justify-start">
-            <Button asChild>
-              <a href="mailto:jmaroon@mail.wlu.edu">
-                <Mail className="h-4 w-4" />
-                Contact
-              </a>
-            </Button>
           </div>
         </div>
       </div>
