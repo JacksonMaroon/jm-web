@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
-  <rect width="256" height="256" rx="48" ry="48" fill="#0B0B0D" />
+  <rect width="256" height="256" rx="48" ry="48" fill="#FFFFFF" />
   <text
     x="50%"
     y="50%"
@@ -9,6 +9,6 @@
     font-size="150"
     font-weight="700"
     letter-spacing="-10"
-    fill="#FFFFFF"
+    fill="#0B0B0D"
   >JM</text>
 </svg>
