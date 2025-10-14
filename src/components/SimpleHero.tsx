@@ -45,8 +45,8 @@ const SimpleHero = () => {
               Jackson Maroon
             </h1>
             <p id="hero-summary" className="text-lg text-muted-foreground sm:text-xl">
-              Business Strategist with experience at Kearney, NIH, and Washington &amp; Lee. I combine analytical
-              rigor, user insights, and data to solve complex problems and deliver measurable outcomes.
+              I'm a business strategist who's worked at Kearney, NIH, and Washington &amp; Lee. I dig into complex
+              problems with data and user research, then build solutions.
             </p>
           </div>
         </div>
