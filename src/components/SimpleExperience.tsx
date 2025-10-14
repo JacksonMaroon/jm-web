@@ -70,9 +70,6 @@ const SimpleExperience = () => {
           <h2 id="experience-title" className="text-3xl font-bold sm:text-4xl">
             Experience
           </h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
-            Highlights from consulting, healthcare innovation, and campus wellness roles where I delivered impact.
-          </p>
         </div>
 
         <div className="space-y-8">
