@@ -63,14 +63,9 @@ const SimpleExperience = () => {
       className="py-20 px-6 bg-gradient-to-b from-background via-background to-muted"
     >
       <div className="max-w-5xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
-          <Badge variant="secondary" className="mx-auto w-fit px-4 py-1 text-sm uppercase tracking-wide">
-            Work
-          </Badge>
-          <h2 id="experience-title" className="text-3xl font-bold sm:text-4xl">
-            Work
-          </h2>
-        </div>
+        <h2 id="experience-title" className="text-3xl font-bold text-center sm:text-4xl">
+          Experience
+        </h2>
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
