@@ -21,10 +21,10 @@ const SimpleExperience = () => {
       companyUrl: "https://www.kearney.com",
       logoKey: "kearney",
       achievements: [
-        "Built internal analytics tool reducing user workflow time 80%",
-        "Drove $18M visibility for client procurement decisions",
-        "Achieved 90% user adoption through training workshops and documentation",
-        "Debugged critical data pipeline issue unlocking $500K in additional customer value"
+        "Built an internal analytics tool that cut workflow time by 80%",
+        "Surfaced $18M in procurement visibility for a major client",
+        "Hit 90% user adoption through hands-on training and clear documentation",
+        "Fixed a critical data pipeline bug that unlocked $500K in customer value"
       ]
     },
     {
@@ -35,10 +35,10 @@ const SimpleExperience = () => {
       companyUrl: "https://www.med.upenn.edu/",
       logoKey: "perelman",
       achievements: [
-        "Selected for NIH program (<15% acceptance rate)",
-        "Conducted behavioral analysis on 40K+ patient journeys",
-        "Identified 3 key intervention points improving outcomes by 25%",
-        "Uncovered 11x decrease in treatment efficacy for specific patient segment"
+        "Accepted into NIH program (sub-15% acceptance rate)",
+        "Analyzed 40K+ patient journeys to identify behavioral patterns",
+        "Found 3 intervention points that improved outcomes by 25%",
+        "Discovered an 11x drop in treatment efficacy for a specific patient segment"
       ]
     },
     {
@@ -49,9 +49,9 @@ const SimpleExperience = () => {
       companyUrl: "https://my.wlu.edu/office-of-health-promotion",
       logoKey: "wlu",
       achievements: [
-        "Launched campus-wide mental health initiative coordinating 4 organizations",
-        "Generated 3000+ student engagements across programs",
-        "Analyzed student feedback and wellness metrics for 10% satisfaction improvement"
+        "Launched campus-wide mental health initiative",
+        "Hit 3000+ student engagements",
+        "Improved satisfaction scores by 10% based on actual feedback"
       ]
     }
   ];
@@ -63,16 +63,15 @@ const SimpleExperience = () => {
       className="py-20 px-6 bg-gradient-to-b from-background via-background to-muted"
     >
       <div className="max-w-5xl mx-auto space-y-12">
-        <div className="text-center space-y-4">
+        <div className="space-y-4 text-center">
           <Badge variant="secondary" className="mx-auto w-fit px-4 py-1 text-sm uppercase tracking-wide">
-            Professional Journey
+            MY WORK
           </Badge>
           <h2 id="experience-title" className="text-3xl font-bold sm:text-4xl">
-            Work Experience
+            Experience
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            A snapshot of the roles where I have delivered impact across consulting, healthcare innovation,
-            and campus wellness.
+          <p className="mx-auto max-w-2xl text-muted-foreground">
+            Highlights from consulting, healthcare innovation, and campus wellness roles where I delivered impact.
           </p>
         </div>
 
