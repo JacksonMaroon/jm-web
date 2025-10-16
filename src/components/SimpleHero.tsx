@@ -45,8 +45,7 @@ const SimpleHero = () => {
               Jackson Maroon
             </h1>
             <p id="hero-summary" className="text-lg text-muted-foreground sm:text-xl">
-              I'm a business strategist who's worked at Kearney, NIH, and Washington &amp; Lee. I dig into complex
-              problems with data and user research, then build solutions.
+              Incoming Kearney consultant &amp; W&amp;L senior exploring how AI is changing the world
             </p>
           </div>
         </div>
