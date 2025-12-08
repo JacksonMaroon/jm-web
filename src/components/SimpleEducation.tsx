@@ -29,7 +29,7 @@ const SimpleEducation = () => {
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Washington and Lee University</h3>
                 <p className="text-muted-foreground mb-2">Bachelor of Science in Business Administration</p>
-                <p className="text-muted-foreground mb-3">Bachelor of Arts in Biology</p>
+                <p className="text-muted-foreground mb-3">Minor in Data Science</p>
                 <div className="flex flex-wrap gap-2 text-sm">
                   <Badge variant="outline">GPA: 3.8</Badge>
                   <Badge variant="outline">SAT: 1580</Badge>
