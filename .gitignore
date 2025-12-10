@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Generated favicons
+public/favicon.ico
+public/apple-touch-icon.png
+public/icon-48.png
+public/icon-96.png
+public/icon-144.png
