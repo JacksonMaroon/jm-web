@@ -3,32 +3,366 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        try {
+          const storedTheme = localStorage.getItem("theme");
+          const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+          if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+            document.documentElement.classList.add("dark");
+          } else {
+            document.documentElement.classList.remove("dark");
+          }
+        } catch (_error) {
+          if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            document.documentElement.classList.add("dark");
+          }
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Jackson Maroon - Product Manager & AI Enthusiast</title>
-    <meta name="description" content="Product Manager with proven track record at Kearney, NIH, and W&L. Expertise in data-driven solutions, user research, and AI. Available for PM roles May 2026." />
-    <meta name="author" content="Jackson Maroon" />
-    <meta name="keywords" content="product manager, AI, data analysis, user research, W&L, Kearney, NIH, product management jobs" />
+    <link rel="canonical" href="https://jacksonmaroon.com/" />
+    <link rel="alternate" hreflang="en" href="https://jacksonmaroon.com/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <title>Jackson "Jack" Maroon - Strategy Consultant &amp; AI Enthusiast</title>
+    <meta
+      name="description"
+      content="Strategy Consultant &amp; AI enthusiast; senior at Washington &amp; Lee University and incoming Business Analyst at Kearney (NYC) working on operations and analytics for Fortune 500 clients starting Summer 2026. Passionate about AI product management, LLM experimentation, and workflow automation."
+    />
+    <meta name="author" content="Jackson (Jack) Maroon" />
+    <meta
+      name="keywords"
+      content="strategy consultant, AI enthusiast, data science, Washington and Lee University, Kearney, AI product management, LLMs, workflow automation, Jackson Maroon, Jack Maroon"
+    />
+    <meta name="application-name" content="Jackson &quot;Jack&quot; Maroon" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#020817" media="(prefers-color-scheme: dark)" />
 
-    <meta property="og:title" content="Jackson Maroon - Product Manager & AI Enthusiast" />
-    <meta property="og:description" content="Product Manager with proven track record at Kearney, NIH, and W&L. Expertise in data-driven solutions, user research, and AI. Available for PM roles May 2026." />
+    <meta property="og:title" content="Jackson &quot;Jack&quot; Maroon - Strategy Consultant &amp; AI Enthusiast" />
+    <meta
+      property="og:description"
+      content="Strategy Consultant &amp; AI enthusiast; senior at Washington &amp; Lee University and incoming Business Analyst at Kearney (NYC) starting Summer 2026. Focused on AI product management, LLM experimentation, and workflow automation."
+    />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lovable.dev/projects/e37bc9cf-1945-43f0-a0d2-233cffb8eb11" />
-    <meta property="og:image" content="https://lovable.dev/projects/e37bc9cf-1945-43f0-a0d2-233cffb8eb11/jm-opengraph.png" />
+    <meta property="og:url" content="https://jacksonmaroon.com/" />
+    <meta property="og:site_name" content="Jackson Maroon" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://jacksonmaroon.com/opengraph-image.svg" />
+    <meta property="og:image:secure_url" content="https://jacksonmaroon.com/opengraph-image.svg" />
+    <meta property="og:image:type" content="image/svg+xml" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="White JM monogram on a black background" />
+    <meta property="og:image:alt" content="Monochrome Jackson Maroon wordmark on a dark background" />
+    <meta property="og:see_also" content="https://linkedin.com/in/jacksonmaroon" />
+    <meta property="og:see_also" content="https://github.com/JacksonMaroon" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jackson Maroon - Product Manager" />
-    <meta name="twitter:description" content="Product Manager with expertise in AI, data analysis, and user research. Available for PM roles." />
-    <meta name="twitter:image" content="https://lovable.dev/projects/e37bc9cf-1945-43f0-a0d2-233cffb8eb11/jm-opengraph.png" />
+    <meta name="twitter:title" content="Jackson &quot;Jack&quot; Maroon - Strategy Consultant &amp; AI Enthusiast" />
+    <meta
+      name="twitter:description"
+      content="Strategy Consultant &amp; AI enthusiast; senior at Washington &amp; Lee University and incoming Business Analyst at Kearney (NYC) starting Summer 2026. Focused on AI product management, LLM experimentation, and workflow automation."
+    />
+    <meta name="twitter:site" content="@Jack_Maroon_" />
+    <meta name="twitter:creator" content="@Jack_Maroon_" />
+    <meta name="twitter:image" content="https://jacksonmaroon.com/opengraph-image.svg" />
+    <meta name="twitter:image:alt" content="Monochrome Jackson Maroon wordmark on a dark background" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://jacksonmaroon.com/#website",
+            "url": "https://jacksonmaroon.com/",
+            "name": "Jackson \"Jack\" Maroon",
+            "description": "Strategy consultant and AI enthusiast; senior at Washington & Lee University and incoming Business Analyst at Kearney in NYC starting Summer 2026. Focused on operations, analytics, and AI product management.",
+            "inLanguage": "en-US",
+            "publisher": { "@id": "https://jacksonmaroon.com/#person" },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.google.com/search?q=site:jacksonmaroon.com+{search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://jacksonmaroon.com/#webpage",
+            "url": "https://jacksonmaroon.com/",
+            "name": "Jackson \"Jack\" Maroon - Strategy Consultant & AI Enthusiast",
+            "isPartOf": { "@id": "https://jacksonmaroon.com/#website" },
+            "about": { "@id": "https://jacksonmaroon.com/#person" },
+            "primaryImageOfPage": { "@id": "https://jacksonmaroon.com/#portrait" },
+            "description": "Strategy consultant and AI enthusiast; senior at Washington & Lee University and incoming Business Analyst at Kearney in NYC starting Summer 2026. Focused on operations, analytics, and AI product management.",
+            "inLanguage": "en-US",
+            "datePublished": "2024-01-01",
+            "dateModified": "2025-01-15",
+            "lastReviewed": "2025-01-15",
+            "breadcrumb": { "@id": "https://jacksonmaroon.com/#breadcrumb" },
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["#hero-title", "#projects-title"]
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://jacksonmaroon.com/#person",
+            "name": "Jackson Maroon",
+            "alternateName": ["Jack Maroon"],
+            "url": "https://jacksonmaroon.com/",
+            "image": { "@id": "https://jacksonmaroon.com/#portrait" },
+              "jobTitle": "Strategy Consultant & AI Enthusiast",
+              "hasOccupation": {
+                "@type": "Occupation",
+                "name": "Management Analyst",
+                "occupationalCategory": "13-1111"
+              },
+            "email": "mailto:jmaroon@mail.wlu.edu",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Lexington",
+              "addressRegion": "VA",
+              "addressCountry": "US"
+            },
+            "alumniOf": {
+              "@id": "https://www.wlu.edu/#organization"
+            },
+            "memberOf": [
+              {
+                "@type": "Organization",
+                "name": "AI Lab at Washington and Lee",
+                "url": "https://my.wlu.edu/ai-lab"
+              },
+              {
+                "@type": "Organization",
+                "name": "Out in STEM (oSTEM)",
+                "url": "https://www.ostem.org/"
+              }
+            ],
+            "worksFor": [
+              { "@id": "https://www.kearney.com/#organization" },
+              { "@id": "https://www.med.upenn.edu/#organization" },
+              { "@id": "https://my.wlu.edu/office-of-health-promotion#organization" }
+            ],
+            "knowsAbout": [
+              "Product Management",
+              "User Research",
+              "Generative AI",
+              "Data Analysis",
+              "Go-to-Market Strategy",
+              "A/B Testing",
+              "Python",
+              "SQL",
+              "Figma",
+              "Agile Methods"
+            ],
+            "knowsLanguage": ["English"],
+            "award": [
+              "National Merit Scholar",
+              "President's List 2023-24",
+              "OΔK Honors Society",
+              "CACI STEM Scholarship",
+              "Gaines Scholarship"
+            ],
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "Business inquiries",
+                "email": "mailto:jmaroon@mail.wlu.edu",
+                "areaServed": "US",
+                "availableLanguage": "English"
+              }
+            ],
+            "sameAs": [
+              "https://linkedin.com/in/jacksonmaroon",
+              "https://github.com/JacksonMaroon",
+              "https://x.com/Jack_Maroon_",
+              "https://substack.com/@jackmaroon?utm_source=user-menu"
+            ],
+            "mainEntityOfPage": { "@id": "https://jacksonmaroon.com/#webpage" }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://jacksonmaroon.com/#portrait",
+            "url": "https://avatars.githubusercontent.com/u/124005183?v=4",
+            "caption": "Portrait of Jackson Maroon"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://jacksonmaroon.com/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://jacksonmaroon.com/"
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://jacksonmaroon.com/#projects",
+            "name": "Highlighted Projects",
+            "itemListOrder": "http://schema.org/ItemListOrderAscending",
+            "numberOfItems": 2,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "CreativeWork",
+                  "name": "Nexo",
+                  "url": "https://www.nexo.rocks",
+                  "sameAs": "https://github.com/JacksonMaroon/Nexo",
+                  "description": "Professional networking app connecting users based on career goals with a competition-winning go-to-market plan.",
+                  "inLanguage": "en"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "CreativeWork",
+                  "name": "FlexContent Calendar",
+                  "url": "https://github.com/JacksonMaroon/FlexContent-Calendar",
+                  "description": "AI content automation platform for B2B financial consultants that reduces production time and automates scheduling.",
+                  "inLanguage": "en"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.kearney.com/#organization",
+            "name": "Kearney",
+            "url": "https://www.kearney.com"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://www.med.upenn.edu/#organization",
+            "name": "University of Pennsylvania Center for Addiction Policy",
+            "url": "https://www.med.upenn.edu/"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://my.wlu.edu/office-of-health-promotion#organization",
+            "name": "Washington & Lee Office of Health Promotion",
+            "url": "https://my.wlu.edu/office-of-health-promotion"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "@id": "https://www.wlu.edu/#organization",
+            "name": "Washington and Lee University",
+            "url": "https://www.wlu.edu/"
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
     <div id="root"></div>
+    <noscript>
+      <style>
+        .noscript-content {
+          font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+          margin: 2rem auto;
+          max-width: 60ch;
+          padding: 0 1.5rem;
+          color: #020817;
+          background: #f8fafc;
+        }
+
+        .noscript-content h1,
+        .noscript-content h2 {
+          margin-top: 2rem;
+          margin-bottom: 1rem;
+        }
+
+        .noscript-content h1 {
+          font-size: 2rem;
+          line-height: 1.2;
+        }
+
+        .noscript-content h2 {
+          font-size: 1.25rem;
+          line-height: 1.3;
+        }
+
+        .noscript-content ul {
+          padding-left: 1.25rem;
+        }
+
+        .noscript-content li {
+          margin-bottom: 0.75rem;
+        }
+
+        .noscript-content a {
+          color: #2563eb;
+        }
+      </style>
+      <div class="noscript-content">
+        <h1>Jackson "Jack" Maroon — Strategy Consultant &amp; AI Enthusiast</h1>
+        <p>
+          Strategy consultant and AI enthusiast. I'm a senior at Washington &amp; Lee University and incoming Business Analyst
+          at Kearney in NYC, where I'll work on operations and analytics problems for Fortune 500 clients starting Summer
+          2026. I spend a lot of time experimenting with LLMs, automation workflows, and thinking about how AI changes
+          knowledge work.
+        </p>
+        <h2>Professional Experience</h2>
+        <ul>
+          <li>
+            <strong>Kearney — Summer Business Analyst (Jun. 2025 – Aug. 2025)</strong>: Built internal analytics tooling that
+            reduced workflow time by 80%, generated $18M in visibility for procurement decisions, and led enablement that
+            drove 90% user adoption.
+          </li>
+          <li>
+            <strong>University of Pennsylvania, Center for Addiction Policy — NIH Summer Intern (May 2024 – Jul. 2024)</strong>:
+            Conducted behavioral analysis across 40K+ patient journeys, revealing key intervention points that boosted
+            outcomes by 25% and spotlighted a critical 11x efficacy gap for a patient segment.
+          </li>
+          <li>
+            <strong>Washington &amp; Lee Office of Health Promotion — Assistant to Director (Sep. 2023 – Present)</strong>:
+            Coordinated a campus-wide mental health initiative with four partner organizations, generating 3,000+ student
+            engagements and improving satisfaction by 10%.
+          </li>
+        </ul>
+        <h2>Highlighted Projects</h2>
+        <ul>
+          <li>
+            <strong>Nexo</strong>: Professional matchmaking platform with a competition-winning go-to-market plan. Delivered in a
+            four-week sprint after more than 50 user interviews. <a href="https://www.nexo.rocks">Visit the project</a> or
+            review the <a href="https://github.com/JacksonMaroon/Nexo">source code</a>.
+          </li>
+          <li>
+            <strong>FlexContent Calendar</strong>: AI-powered content automation tool that cuts production time by 75% for B2B
+            consultants. Explore the <a href="https://github.com/JacksonMaroon/FlexContent-Calendar">code repository</a>.
+          </li>
+        </ul>
+        <h2>Education &amp; Leadership</h2>
+        <p>
+          Washington and Lee University — B.S. in Business Administration with a Data Science minor (GPA 3.8, SAT 1580). Honors
+          include National Merit Scholar, President's List, OΔK Honors Society, CACI STEM Scholarship, and Gaines
+          Scholarship.
+        </p>
+        <p>
+          Leadership roles: Head AI Fellow at the AI Lab, President of Out in STEM (oSTEM), and Student Consulting Team Lead.
+        </p>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:jmaroon@mail.wlu.edu">jmaroon@mail.wlu.edu</a></p>
+        <p>Location: Lexington, VA — open to relocation.</p>
+        <p>
+          Schedule a conversation at <a href="https://cal.com/jackson-maroon">cal.com/jackson-maroon</a> or request a resume
+          via email.
+        </p>
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

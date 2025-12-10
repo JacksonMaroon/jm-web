@@ -9,10 +9,16 @@ const SimpleEducation = () => {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <section
+      id="education"
+      aria-labelledby="education-title"
+      className="py-20 px-6"
+    >
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-12 text-center">Education & Skills</h2>
-        
+        <h2 id="education-title" className="text-3xl font-bold mb-12 text-center">
+          Education & Skills
+        </h2>
+
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Education */}
           <div>
@@ -23,7 +29,7 @@ const SimpleEducation = () => {
               <div className="flex-1">
                 <h3 className="text-xl font-semibold mb-2">Washington and Lee University</h3>
                 <p className="text-muted-foreground mb-2">Bachelor of Science in Business Administration</p>
-                <p className="text-muted-foreground mb-3">Bachelor of Arts in Biology</p>
+                <p className="text-muted-foreground mb-3">Minor in Data Science</p>
                 <div className="flex flex-wrap gap-2 text-sm">
                   <Badge variant="outline">GPA: 3.8</Badge>
                   <Badge variant="outline">SAT: 1580</Badge>
