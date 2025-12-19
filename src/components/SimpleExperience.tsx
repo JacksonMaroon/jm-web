@@ -13,48 +13,48 @@ const SimpleExperience = () => {
     logoKey: CompanyLogoKey;
     achievements: string[];
   }> = [
-    {
-      company: "Kearney",
-      role: "Summer Business Analyst",
-      period: "Jun. 2025 – Aug. 2025",
-      location: "New York, NY",
-      companyUrl: "https://www.kearney.com",
-      logoKey: "kearney",
-      achievements: [
-        "Built an internal analytics tool that cut workflow time by 80%",
-        "Surfaced $18M in procurement visibility for a major client",
-        "Hit 90% user adoption through hands-on training and clear documentation",
-        "Fixed a critical data pipeline bug that unlocked $500K in customer value"
-      ]
-    },
-    {
-      company: "University of Pennsylvania, Center for Addiction Policy",
-      role: "NIH Summer Intern",
-      period: "May 2024 – Jul. 2024",
-      location: "Philadelphia, PA",
-      companyUrl: "https://www.med.upenn.edu/",
-      logoKey: "perelman",
-      achievements: [
-        "Accepted into NIH program (sub-15% acceptance rate)",
-        "Analyzed 40K+ patient journeys to identify behavioral patterns",
-        "Found 3 intervention points that improved outcomes by 25%",
-        "Discovered an 11x drop in treatment efficacy for a specific patient segment"
-      ]
-    },
-    {
-      company: "W&L Office of Health Promotion",
-      role: "Assistant to Director",
-      period: "Sep. 2023 – Present",
-      location: "Lexington, VA",
-      companyUrl: "https://my.wlu.edu/office-of-health-promotion",
-      logoKey: "wlu",
-      achievements: [
-        "Launched campus-wide mental health initiative",
-        "Hit 3000+ student engagements",
-        "Improved satisfaction scores by 10% based on actual feedback"
-      ]
-    }
-  ];
+      {
+        company: "Kearney",
+        role: "Summer Business Analyst",
+        period: "Jun. 2025 – Aug. 2025",
+        location: "New York, NY",
+        companyUrl: "https://www.kearney.com",
+        logoKey: "kearney",
+        achievements: [
+          "Built an internal analytics tool that cut workflow time by 80%",
+          "Surfaced $18M in procurement visibility for a major client",
+          "Hit 90% user adoption through hands-on training and clear documentation",
+          "Fixed a critical data pipeline bug that unlocked $500K in customer value"
+        ]
+      },
+      {
+        company: "University of Pennsylvania, Center for Addiction Policy",
+        role: "NIH Summer Intern",
+        period: "May 2024 – Jul. 2024",
+        location: "Philadelphia, PA",
+        companyUrl: "https://www.med.upenn.edu/",
+        logoKey: "perelman",
+        achievements: [
+          "Accepted into NIH program (sub-15% acceptance rate)",
+          "Analyzed 40K+ patient journeys to identify behavioral patterns",
+          "Found 3 intervention points that improved outcomes by 25%",
+          "Discovered an 11x drop in treatment efficacy for a specific patient segment"
+        ]
+      },
+      {
+        company: "W&L Office of Health Promotion",
+        role: "Assistant to Director",
+        period: "Sep. 2023 – Present",
+        location: "Lexington, VA",
+        companyUrl: "https://my.wlu.edu/office-of-health-promotion",
+        logoKey: "wlu",
+        achievements: [
+          "Launched campus-wide mental health initiative",
+          "Hit 3000+ student engagements",
+          "Improved satisfaction scores by 10% based on actual feedback"
+        ]
+      }
+    ];
 
   return (
     <section
@@ -76,7 +76,7 @@ const SimpleExperience = () => {
           {experiences.map((exp, index) => (
             <Card
               key={index}
-              className="border-border/60 shadow-lg transition-shadow hover:shadow-xl hover:border-primary/30"
+              className="border-border/60 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-primary/50"
             >
               <div className="flex flex-col gap-6 p-8">
                 <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">

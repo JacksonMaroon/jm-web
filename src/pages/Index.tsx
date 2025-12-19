@@ -3,6 +3,7 @@ import SimpleExperience from "@/components/SimpleExperience";
 import SimpleProjects from "@/components/SimpleProjects";
 import SimpleEducation from "@/components/SimpleEducation";
 import FloatingMenuBar from "@/components/FloatingMenuBar";
+import DynamicScrollButton from "@/components/DynamicScrollButton";
 
 const Index = () => {
   return (
@@ -34,6 +35,7 @@ const Index = () => {
         </div>
       </footer>
       <FloatingMenuBar />
+      <DynamicScrollButton />
     </div>
   );
 };

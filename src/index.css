@@ -17,13 +17,13 @@
 
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
-    
+
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 9%;
-    
+
     --accent: 220 14% 96%;
     --accent-foreground: 0 0% 9%;
-    
+
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
 
@@ -68,13 +68,13 @@
 
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
-    
+
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
-    
+
     --accent: 0 0% 14.9%;
     --accent-foreground: 0 0% 98%;
-    
+
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
 
@@ -107,7 +107,7 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }

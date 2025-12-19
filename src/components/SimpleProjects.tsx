@@ -50,7 +50,7 @@ const SimpleProjects = () => {
 
         <div className="space-y-12">
           {projects.map((project, index) => (
-            <article key={index} className="bg-card rounded-lg border p-8" aria-labelledby={`project-${index}`}>
+            <article key={index} className="bg-card rounded-lg border p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-primary/50" aria-labelledby={`project-${index}`}>
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">
                 <div className="flex-1">
                   <h3 id={`project-${index}`} className="text-2xl font-semibold mb-2">
@@ -60,7 +60,7 @@ const SimpleProjects = () => {
                   <p className="text-sm text-muted-foreground mb-4">{project.details}</p>
                   <Badge variant="outline" className="text-xs">{project.period}</Badge>
                 </div>
-                
+
                 <div className="flex gap-2">
                   {project.links.website && (
                     <Button variant="outline" size="sm" asChild>
@@ -78,7 +78,7 @@ const SimpleProjects = () => {
                   </Button>
                 </div>
               </div>
-              
+
               <div>
                 <h4 className="font-medium mb-3">Key Achievements</h4>
                 <ul className="grid md:grid-cols-2 gap-2">
