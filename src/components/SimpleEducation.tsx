@@ -40,20 +40,20 @@ const SimpleEducation = () => {
               </div>
               <h3 className="text-xl font-semibold mb-4">Honors & Recognition</h3>
               <ul className="space-y-3 text-sm text-muted-foreground flex-1">
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span> National Merit Scholar
+                <li className="flex items-center gap-2">
+                  <span className="text-primary">•</span> National Merit Scholar
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span> President's List 2023-24
+                <li className="flex items-center gap-2">
+                  <span className="text-primary">•</span> President's List 2023-24
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span> O∆K Honors Society
+                <li className="flex items-center gap-2">
+                  <span className="text-primary">•</span> O∆K Honors Society
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span> CACI STEM Scholarship
+                <li className="flex items-center gap-2">
+                  <span className="text-primary">•</span> CACI STEM Scholarship
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-primary mt-1">•</span> Gaines Scholarship
+                <li className="flex items-center gap-2">
+                  <span className="text-primary">•</span> Gaines Scholarship
                 </li>
               </ul>
             </div>
