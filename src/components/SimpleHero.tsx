@@ -30,11 +30,11 @@ const SimpleHero = () => {
           <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-muted-foreground md:justify-start">
             <span className="inline-flex items-center gap-2 rounded-full border border-border/60 px-3 py-1 backdrop-blur">
               <MapPin className="h-4 w-4" />
-              Lexington, VA
+              Lexington, VA → NYC
             </span>
             <span className="inline-flex items-center gap-2 rounded-full border border-border/60 px-3 py-1 backdrop-blur">
               <Calendar className="h-4 w-4" />
-              Available May 2026
+              Graduating May 2026
             </span>
           </div>
         </div>
