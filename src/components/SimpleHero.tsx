@@ -45,7 +45,7 @@ const SimpleHero = () => {
               Jackson Maroon
             </h1>
             <p id="hero-summary" className="text-lg text-muted-foreground sm:text-xl">
-              Strategy Consultant &amp; AI Enthusiast
+              Strategy Consultant. Building with AI
             </p>
           </div>
           <div className="space-y-3 rounded-2xl border border-border/60 bg-background/70 p-6 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-primary/50">
