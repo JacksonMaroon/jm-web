@@ -83,8 +83,8 @@ const SimpleProjects = () => {
                 <h4 className="font-medium mb-3">Key Achievements</h4>
                 <ul className="grid md:grid-cols-2 gap-2">
                   {project.achievements.map((achievement, i) => (
-                    <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
-                      <span className="text-primary mt-1.5">•</span>
+                    <li key={i} className="text-sm text-muted-foreground flex items-center gap-2">
+                      <span className="text-primary">•</span>
                       {achievement}
                     </li>
                   ))}
