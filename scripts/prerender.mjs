@@ -1,3 +1,9 @@
+// Skip prerendering on Vercel (no Chrome available)
+if (process.env.VERCEL) {
+  console.log('Skipping prerender on Vercel - run locally before deploying');
+  process.exit(0);
+}
+
 import puppeteer from 'puppeteer';
 import { createServer } from 'http';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
