@@ -26,7 +26,9 @@ const mimeTypes = {
 function createStaticServer(port) {
   return new Promise((resolve) => {
     const server = createServer((req, res) => {
-      let filePath = join(distDir, req.url === '/' ? 'index.html' : req.url);
+      // Strip leading slash and query string to get clean path
+      const urlPath = req.url.split('?')[0].replace(/^\/+/, '') || 'index.html';
+      let filePath = join(distDir, urlPath);
 
       // Handle SPA routing - serve index.html for non-file routes
       if (!existsSync(filePath) || !extname(filePath)) {
