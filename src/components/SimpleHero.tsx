@@ -23,7 +23,11 @@ const SimpleHero = () => {
                 src={portraitImageUrl}
                 alt="Jackson Maroon smiling in front of a neutral background"
                 className="h-full w-full object-cover"
-                loading="lazy"
+                width={192}
+                height={192}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
           </div>
