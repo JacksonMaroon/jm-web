@@ -86,7 +86,10 @@ const SimpleExperience = () => {
                         src={companyLogos[exp.logoKey].src}
                         alt={companyLogos[exp.logoKey].alt}
                         className="h-full w-full object-contain"
+                        width={56}
+                        height={56}
                         loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="space-y-1">
