@@ -1,7 +1,5 @@
 import { MapPin, Calendar } from "lucide-react";
 
-const portraitImageUrl = "https://avatars.githubusercontent.com/u/124005183?v=4";
-
 const SimpleHero = () => {
   return (
     <header
@@ -19,12 +17,20 @@ const SimpleHero = () => {
           <div className="relative">
             <div className="absolute inset-0 rounded-[36px] bg-primary/30 blur-2xl" />
             <div className="relative h-40 w-40 overflow-hidden rounded-[32px] border border-border/50 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.6)] sm:h-48 sm:w-48">
-              <img
-                src={portraitImageUrl}
-                alt="Jackson Maroon smiling in front of a neutral background"
-                className="h-full w-full object-cover"
-                loading="lazy"
-              />
+              <picture>
+                <source srcSet="/portrait.avif" type="image/avif" />
+                <source srcSet="/portrait.webp" type="image/webp" />
+                <img
+                  src="/portrait.jpg"
+                  alt="Jackson Maroon smiling in front of a neutral background"
+                  className="h-full w-full object-cover"
+                  width={192}
+                  height={192}
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
             </div>
           </div>
         </div>
