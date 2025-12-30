@@ -48,7 +48,6 @@ async function generateIco() {
   const pngBuffers = await Promise.all([
     readFile(path.join(publicDir, 'icon-48.png')),
     readFile(path.join(publicDir, 'icon-96.png')),
-    readFile(path.join(publicDir, 'icon-144.png')),
   ]);
 
   const icoBuffer = await pngToIco(pngBuffers);
