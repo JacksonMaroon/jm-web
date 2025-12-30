@@ -8,9 +8,9 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip";
 
-type Section = "intro" | "experience" | "projects" | "education";
+type Section = "intro" | "experience" | "projects" | "education" | "explore";
 
-const sections: Section[] = ["intro", "experience", "projects", "education"];
+const sections: Section[] = ["intro", "experience", "projects", "education", "explore"];
 
 const DynamicScrollButton = () => {
     const [currentSection, setCurrentSection] = useState<Section>("intro");
@@ -59,6 +59,8 @@ const DynamicScrollButton = () => {
             case "projects":
                 return { text: "Go to Education", target: "education", icon: ArrowDown };
             case "education":
+                return { text: "Go to Explore", target: "explore", icon: ArrowDown };
+            case "explore":
                 return { text: "Back to Top", target: "intro", icon: ArrowUp };
             default:
                 return { text: "Next Section", target: "experience", icon: ArrowDown };
