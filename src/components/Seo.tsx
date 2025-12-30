@@ -7,6 +7,8 @@ type SeoProps = {
   ogType?: "website" | "article";
 };
 
+const SITE_NAME = "Jackson Maroon";
+
 const setMetaTag = (attribute: "name" | "property", key: string, content: string) => {
   const selector = `meta[${attribute}="${key}"]`;
   let element = document.head.querySelector<HTMLMetaElement>(selector);
@@ -45,6 +47,7 @@ const Seo = ({ title, description, canonical, ogType = "website" }: SeoProps) =>
     setMetaTag("property", "og:description", description);
     setMetaTag("property", "og:url", canonical);
     setMetaTag("property", "og:type", ogType);
+    setMetaTag("property", "og:site_name", SITE_NAME);
     setMetaTag("name", "twitter:title", title);
     setMetaTag("name", "twitter:description", description);
     setCanonicalLink(canonical);
