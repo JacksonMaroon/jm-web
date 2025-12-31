@@ -32,6 +32,7 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="canonical" href="https://jacksonmaroon.com/" />
+    <link rel="image_src" href="https://jacksonmaroon.com/portrait-google.jpg" />
     <link rel="alternate" hreflang="en" href="https://jacksonmaroon.com/" />
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <title>Jackson Maroon</title>
@@ -45,7 +46,8 @@
       content="strategy consultant, building with AI, data science, Washington and Lee University, Kearney, AI product management, LLMs, workflow automation, Jackson Maroon, Jack Maroon"
     />
     <meta name="application-name" content="Jackson Maroon" />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="image" content="https://jacksonmaroon.com/portrait-google.jpg" />
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#020817" media="(prefers-color-scheme: dark)" />
@@ -106,6 +108,7 @@
             "isPartOf": { "@id": "https://jacksonmaroon.com/#website" },
             "about": { "@id": "https://jacksonmaroon.com/#person" },
             "primaryImageOfPage": { "@id": "https://jacksonmaroon.com/#portrait" },
+            "image": { "@id": "https://jacksonmaroon.com/#portrait" },
             "description": "Strategy Consultant. Building with AI. Senior at Washington & Lee University and incoming Business Analyst at Kearney in NYC starting Summer 2026. Focused on operations, analytics, and AI product management.",
             "inLanguage": "en-US",
             "datePublished": "2024-01-01",
@@ -198,8 +201,11 @@
             "@type": "ImageObject",
             "@id": "https://jacksonmaroon.com/#portrait",
             "url": "https://jacksonmaroon.com/portrait-google.jpg",
+            "contentUrl": "https://jacksonmaroon.com/portrait-google.jpg",
+            "thumbnailUrl": "https://jacksonmaroon.com/portrait-google.jpg",
             "width": 1200,
             "height": 1200,
+            "representativeOfPage": true,
             "caption": "Portrait of Jackson Maroon"
           },
           {
