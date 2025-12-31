@@ -46,6 +46,8 @@ async function generateAppleTouch() {
 async function generateIco() {
   const outputPath = path.join(publicDir, 'favicon.ico');
   const pngBuffers = await Promise.all([
+    readFile(path.join(publicDir, 'icon-16.png')),
+    readFile(path.join(publicDir, 'icon-32.png')),
     readFile(path.join(publicDir, 'icon-48.png')),
     readFile(path.join(publicDir, 'icon-96.png')),
   ]);
@@ -57,7 +59,7 @@ async function generateIco() {
 async function main() {
   await ensurePublicDir();
 
-  const sizes = [48, 96, 144];
+  const sizes = [16, 32, 48, 96, 144];
   const pngPromises = sizes.map(generatePng);
   await Promise.all([...pngPromises, generateAppleTouch()]);
 
