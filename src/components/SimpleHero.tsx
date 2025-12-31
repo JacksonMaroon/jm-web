@@ -18,10 +18,18 @@ const SimpleHero = () => {
             <div className="absolute inset-0 rounded-[36px] bg-primary/30 blur-2xl" />
             <div className="relative h-40 w-40 overflow-hidden rounded-[32px] border border-border/50 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.6)] sm:h-48 sm:w-48">
               <picture>
-                <source srcSet="/portrait.avif" type="image/avif" />
-                <source srcSet="/portrait.webp" type="image/webp" />
+                <source
+                  srcSet="/portrait-google-384.avif 384w, /portrait-google-768.avif 768w, /portrait-google.avif 1200w"
+                  type="image/avif"
+                />
+                <source
+                  srcSet="/portrait-google-384.webp 384w, /portrait-google-768.webp 768w, /portrait-google.webp 1200w"
+                  type="image/webp"
+                />
                 <img
-                  src="/portrait.jpg"
+                  src="/portrait-google-384.jpg"
+                  srcSet="/portrait-google-384.jpg 384w, /portrait-google-768.jpg 768w, /portrait-google.jpg 1200w"
+                  sizes="(min-width: 640px) 192px, 160px"
                   alt="Jackson Maroon smiling in front of a neutral background"
                   className="h-full w-full object-cover"
                   width={192}
