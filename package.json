@@ -10,7 +10,9 @@
     "build:dev": "vite build --mode development",
     "generate:favicons": "node scripts/generate-favicons.mjs",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "index": "node scripts/index-urls.mjs",
+    "postdeploy": "npm run index"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
