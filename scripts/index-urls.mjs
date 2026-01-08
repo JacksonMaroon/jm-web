@@ -29,6 +29,7 @@
 import https from 'https';
 import fs from 'fs';
 import path from 'path';
+import crypto from 'crypto';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -112,7 +113,6 @@ function createJWT(credentials) {
   const base64Payload = base64urlEncode(JSON.stringify(payload));
   const signatureInput = `${base64Header}.${base64Payload}`;
 
-  const crypto = await import('crypto');
   const sign = crypto.createSign('RSA-SHA256');
   sign.update(signatureInput);
   const signature = sign.sign(credentials.private_key, 'base64')
