@@ -64,7 +64,7 @@ const SimpleHero = () => {
           </div>
           <div className="space-y-3 rounded-2xl border border-border/60 bg-background/70 p-6 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-primary/50">
             <p className="text-base text-muted-foreground">
-              I'm a senior at Washington &amp; Lee University and incoming Business Analyst at Kearney in NYC.
+              I'm Jackson Maroon, a senior at Washington &amp; Lee University and incoming Business Analyst at Kearney in NYC.
               Long-term, I want to build AI tools that make knowledge work better—more on that below.
             </p>
           </div>
