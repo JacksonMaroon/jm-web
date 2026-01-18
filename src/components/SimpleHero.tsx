@@ -27,7 +27,7 @@ const SimpleHero = () => {
                   type="image/webp"
                 />
                 <img
-                  src="/portrait-google-384.jpg"
+                  src="/portrait-google.jpg"
                   srcSet="/portrait-google-384.jpg 384w, /portrait-google-768.jpg 768w, /portrait-google.jpg 1200w"
                   sizes="(min-width: 640px) 192px, 160px"
                   alt="Jackson Maroon smiling in front of a neutral background"
