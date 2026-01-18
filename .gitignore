@@ -26,3 +26,6 @@ dist-ssr
 # Google API credentials (never commit these)
 google-credentials.json
 *-credentials.json
+
+# Vercel project link metadata
+.vercel/
