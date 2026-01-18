@@ -34,6 +34,39 @@ const SimpleProjects = () => {
         github: "https://github.com/JacksonMaroon/FlexContent-Calendar"
       },
       period: "May 2024 – Jul. 2024"
+    },
+    {
+      title: "GroupMe Claude Bot",
+      description: "Serverless GroupMe AI Chatbot",
+      details: "Built a serverless GroupMe bot powered by Claude Haiku with configurable triggers and cost controls.",
+      achievements: [
+        "Uses Claude Haiku 4.5 for fast, low-cost responses",
+        "Only responds on mention with configurable trigger words",
+        "Built-in hourly budget cap to control API costs",
+        "Runs on Vercel with zero infrastructure management"
+      ],
+      links: {
+        github: "https://github.com/JacksonMaroon/groupme-claude-bot"
+      },
+      period: "Jan. 2026"
+    },
+    {
+      title: "Lamp Control Duo",
+      description: "BLE Lamp Control (Menu Bar + Siri Shortcuts)",
+      details: "Built a minimalist macOS menu bar controller and Siri Shortcuts app to control a BLE RGB lamp without the vendor app.",
+      achievements: [
+        "One-click power toggle, color presets, and brightness slider from the menu bar",
+        "Siri Shortcuts for on/off, brightness, preset colors, and custom RGB",
+        "Direct BLE control with no account, cloud, or ads",
+        "Reverse-engineered BLE protocol for reliable local control"
+      ],
+      links: {
+        github: "https://github.com/JacksonMaroon/LampMenuBar",
+        githubLabel: "Menu Bar",
+        githubSecondary: "https://github.com/JacksonMaroon/LampShortcuts",
+        githubSecondaryLabel: "Shortcuts"
+      },
+      period: "Jan. 2026"
     }
   ];
 
@@ -70,12 +103,22 @@ const SimpleProjects = () => {
                       </a>
                     </Button>
                   )}
-                  <Button variant="outline" size="sm" asChild>
-                    <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4" />
-                      Code
-                    </a>
-                  </Button>
+                  {project.links.github && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4" />
+                        {project.links.githubLabel ?? "Code"}
+                      </a>
+                    </Button>
+                  )}
+                  {project.links.githubSecondary && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.links.githubSecondary} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4" />
+                        {project.links.githubSecondaryLabel ?? "Code"}
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </div>
 
