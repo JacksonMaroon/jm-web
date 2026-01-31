@@ -123,7 +123,7 @@ const LongformPage = ({
 
       <footer className="border-t px-6 py-8 text-center">
         <div className="mx-auto max-w-4xl">
-          <p className="text-sm text-muted-foreground">© 2025 Jackson Maroon</p>
+          <p className="text-sm text-muted-foreground">© 2026 Jackson Maroon</p>
         </div>
       </footer>
 

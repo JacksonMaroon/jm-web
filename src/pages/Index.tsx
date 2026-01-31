@@ -38,7 +38,7 @@ const Index = () => {
       <footer className="py-8 px-6 text-center border-t">
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-muted-foreground">
-            © 2025 Jackson Maroon
+            © 2026 Jackson Maroon
           </p>
         </div>
       </footer>
