@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Nexo from "./pages/thoughts/Nexo";
 import Ai from "./pages/thoughts/Ai";
+import WebMCPTools from "./components/WebMCPTools";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <WebMCPTools />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
