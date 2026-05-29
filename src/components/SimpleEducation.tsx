@@ -25,7 +25,6 @@ const SimpleEducation = () => {
               <p className="text-muted-foreground mb-2">Bachelor of Science in Business Administration</p>
               <p className="text-muted-foreground mb-4">Minor in Data Science</p>
               <div className="flex flex-wrap gap-2 text-sm mt-auto">
-                <Badge variant="outline">GPA: 3.8</Badge>
                 <Badge variant="outline">SAT: 1580</Badge>
                 <Badge variant="outline">May 2026</Badge>
               </div>
