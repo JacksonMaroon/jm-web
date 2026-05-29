@@ -44,7 +44,7 @@ const SimpleExperience = () => {
       {
         company: "W&L Office of Health Promotion",
         role: "Assistant to Director",
-        period: "Sep. 2023 – Present",
+        period: "Sep. 2023 - May 2026",
         location: "Lexington, VA",
         companyUrl: "https://my.wlu.edu/office-of-health-promotion",
         logoKey: "wlu",

@@ -105,8 +105,8 @@ const About = () => {
           when it is grounded in a human workflow instead of trying to replace it.
         </p>
         <p>
-          On campus, I am the Head AI Fellow for the AI Lab at Washington and Lee and the president
-          of Out in STEM. Those roles taught me how to build inclusive teams, set a vision, and keep
+          At Washington and Lee, I served as Head AI Fellow for the AI Lab and president of Out in
+          STEM. Those roles taught me how to build inclusive teams, set a vision, and keep
           momentum in groups with different incentives and backgrounds. I care about creating space
           where people feel they belong and where high standards are paired with genuine support.
         </p>
@@ -126,7 +126,7 @@ const About = () => {
           love to connect. I am especially interested in projects where customer insight can reshape
           how a team works, not just what it ships. In the meantime, I will keep learning in public
           through these essays and case studies, and I will keep shipping the things I wish I had as a
-          student and a future consultant.
+          student and future consultant.
         </p>
       </section>
     </LongformPage>

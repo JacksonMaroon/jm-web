@@ -69,17 +69,17 @@ const SimpleEducation = () => {
                 <div>
                   <div className="font-medium text-base mb-1">Head AI Fellow</div>
                   <div className="text-muted-foreground">AI Lab at Washington and Lee</div>
-                  <div className="text-xs text-muted-foreground mt-1">Jan 2025 - Present</div>
+                  <div className="text-xs text-muted-foreground mt-1">Jan 2025 - May 2026</div>
                 </div>
                 <div>
                   <div className="font-medium text-base mb-1">President</div>
                   <div className="text-muted-foreground">Out in STEM (oSTEM)</div>
-                  <div className="text-xs text-muted-foreground mt-1">Sep 2023 - Present</div>
+                  <div className="text-xs text-muted-foreground mt-1">Sep 2023 - May 2026</div>
                 </div>
                 <div>
                   <div className="font-medium text-base mb-1">Team Lead</div>
                   <div className="text-muted-foreground">Student Consulting</div>
-                  <div className="text-xs text-muted-foreground mt-1">Nov 2023 - Present</div>
+                  <div className="text-xs text-muted-foreground mt-1">Nov 2023 - May 2026</div>
                 </div>
               </div>
             </div>
