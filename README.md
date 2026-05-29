@@ -4,7 +4,7 @@ Personal website and portfolio.
 
 ## About
 
-I'm Jackson Maroon — senior at Washington & Lee University studying Business Administration with a Data Science minor. Incoming Business Analyst at Kearney (NYC).
+I'm Jackson Maroon, a Washington & Lee University graduate with a B.S. in Business Administration and a Data Science minor. Incoming Business Analyst at Kearney (NYC).
 
 Interested in AI strategy, consulting, and building things.
 

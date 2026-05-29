@@ -39,9 +39,9 @@ const About = () => {
           <h2 className="text-xl font-semibold text-foreground">Background and focus</h2>
           <p>
             I am a strategy consultant in training who cares about the space between rigorous analysis and
-            good human judgment. I am a senior at Washington and Lee University, studying business
-            administration with a minor in data science, and I am joining Kearney in New York City as a
-            Business Analyst after graduation. The through line across my work is simple: find the
+            good human judgment. I graduated from Washington and Lee University with a B.S. in Business
+            Administration and a minor in Data Science, and I am joining Kearney in New York City as a
+            Business Analyst. The through line across my work is simple: find the
             decisions that matter, build the smallest set of insights that can move them, and make the
             story easy to act on.
           </p>
