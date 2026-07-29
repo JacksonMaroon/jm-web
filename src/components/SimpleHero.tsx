@@ -47,7 +47,7 @@ const SimpleHero = () => {
           <div className="flex flex-wrap items-center justify-center gap-3 text-sm text-muted-foreground md:justify-start">
             <span className="inline-flex items-center gap-2 rounded-full border border-border/60 px-3 py-1 backdrop-blur">
               <MapPin className="h-4 w-4" />
-              Lexington, VA → NYC
+              New York, NY
             </span>
             <span className="inline-flex items-center gap-2 rounded-full border border-border/60 px-3 py-1 backdrop-blur">
               <Calendar className="h-4 w-4" />
@@ -59,13 +59,13 @@ const SimpleHero = () => {
               Jackson Maroon
             </h1>
             <p id="hero-summary" className="text-lg text-muted-foreground sm:text-xl">
-              Strategy Consultant. Building with AI
+              Business Analyst at Kearney. Building with AI
             </p>
           </div>
           <div className="space-y-3 rounded-2xl border border-border/60 bg-background/70 p-6 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-primary/50">
             <p className="text-base text-muted-foreground">
-              I'm Jackson Maroon, a Washington &amp; Lee University graduate and incoming Business Analyst at Kearney in NYC.
-              Long-term, I want to build AI tools that make knowledge work better, more on that below.
+              I work on operations and analytics problems and independently build AI products that simplify messy workflows.
+              My goal is to make knowledge work clearer, faster, and more useful.
             </p>
           </div>
         </div>

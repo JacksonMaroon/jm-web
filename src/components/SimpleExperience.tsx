@@ -21,10 +21,10 @@ const SimpleExperience = () => {
         companyUrl: "https://www.kearney.com",
         logoKey: "kearney",
         achievements: [
-          "Built an internal analytics tool that cut workflow time by 80%",
-          "Surfaced $18M in procurement visibility for a major client",
-          "Hit 90% user adoption through hands-on training and clear documentation",
-          "Fixed a critical data pipeline bug that unlocked $500K in customer value"
+          "Supported a direct-material supply chain transformation across category sourcing and integrated business planning",
+          "Built procurement analytics tooling that cut a recurring workflow by 80%",
+          "Delivered $18M in procurement decision visibility",
+          "Led training and documentation that helped drive 90% adoption"
         ]
       },
       {

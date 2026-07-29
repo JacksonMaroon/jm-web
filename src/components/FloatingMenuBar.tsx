@@ -19,51 +19,6 @@ const LinkedInLogo = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const XLogo = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
-  <svg
-    aria-hidden="true"
-    focusable="false"
-    viewBox="0 0 512 512"
-    className={className}
-    {...props}
-  >
-    <path
-      fill="currentColor"
-      d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-    />
-  </svg>
-);
-
-const SubstackLogo = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
-  <svg
-    aria-hidden="true"
-    focusable="false"
-    viewBox="0 0 24 24"
-    className={className}
-    {...props}
-  >
-    <path
-      fill="currentColor"
-      d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"
-    />
-  </svg>
-);
-
-const InstagramLogo = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
-  <svg
-    aria-hidden="true"
-    focusable="false"
-    viewBox="0 0 448 512"
-    className={className}
-    {...props}
-  >
-    <path
-      fill="currentColor"
-      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27s12.1-27 27-27c14.9.1 27 12.1 27 27zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9S349.2 44.8 313.3 43.1c-35.9-2-143.2-2-179.1 0-35.9 1.7-67.7 9.9-93.9 36.2s-34.5 58-36.2 93.9c-2 35.9-2 143.2 0 179.1 1.7 35.9 9.9 67.7 36.2 93.9s58 34.5 93.9 36.2c35.9 2 143.2 2 179.1 0 35.9-1.7 67.7-9.9 93.9-36.2s34.5-58 36.2-93.9c2-35.9 2-143.1 0-179zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-    />
-  </svg>
-);
-
 const GitHubLogo = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     aria-hidden="true"
@@ -92,7 +47,7 @@ type SocialLink = {
 
 const socialLinks: SocialLink[] = [
   {
-    href: "mailto:jmaroon@mail.wlu.edu",
+    href: "mailto:jackson.maroon4@gmail.com",
     label: "Email Jackson",
     icon: Mail,
   },
@@ -105,21 +60,6 @@ const socialLinks: SocialLink[] = [
     href: "https://github.com/JacksonMaroon",
     label: "GitHub",
     icon: GitHubLogo,
-  },
-  {
-    href: "https://x.com/Jack_Maroon_",
-    label: "X (Twitter)",
-    icon: XLogo,
-  },
-  {
-    href: "https://www.instagram.com/jacksonmarooon/",
-    label: "Instagram",
-    icon: InstagramLogo,
-  },
-  {
-    href: "https://substack.com/@jackmaroon?utm_source=user-menu",
-    label: "Substack",
-    icon: SubstackLogo,
   },
 ];
 

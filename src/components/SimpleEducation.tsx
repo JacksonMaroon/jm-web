@@ -37,13 +37,10 @@ const SimpleEducation = () => {
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-6 text-primary">
                 <Award className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold mb-4">Honors & Recognition</h3>
+              <h3 className="text-xl font-semibold mb-4">Selected Honors</h3>
               <ul className="space-y-3 text-sm text-muted-foreground flex-1">
                 <li className="flex items-center gap-2">
                   <span className="text-primary">•</span> National Merit Scholar
-                </li>
-                <li className="flex items-center gap-2">
-                  <span className="text-primary">•</span> President's List 2023-24
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-primary">•</span> O∆K Honors Society

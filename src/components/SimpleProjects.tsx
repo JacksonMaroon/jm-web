@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 
 const SimpleProjects = () => {
-  const projects = [
+  const featuredProjects = [
     {
       title: "Nexo",
       description: "Professional Matchmaking Platform",
@@ -34,40 +34,23 @@ const SimpleProjects = () => {
         github: "https://github.com/JacksonMaroon/FlexContent-Calendar"
       },
       period: "May 2024 – Jul. 2024"
-    },
+    }
+  ];
+
+  const otherBuilds = [
     {
       title: "GroupMe Claude Bot",
-      description: "Serverless GroupMe AI Chatbot",
-      details: "Built a serverless GroupMe bot powered by Claude Haiku with configurable triggers and cost controls.",
-      achievements: [
-        "Uses Claude Haiku 4.5 for fast, low-cost responses",
-        "Only responds on mention with configurable trigger words",
-        "Built-in hourly budget cap to control API costs",
-        "Runs on Vercel with zero infrastructure management"
-      ],
-      links: {
-        github: "https://github.com/JacksonMaroon/groupme-claude-bot"
-      },
-      period: "Jan. 2026"
+      description: "A serverless AI chatbot with configurable triggers and cost controls.",
+      links: [{ href: "https://github.com/JacksonMaroon/groupme-claude-bot", label: "Code" }],
     },
     {
       title: "Lamp Control Duo",
-      description: "BLE Lamp Control (Menu Bar + Siri Shortcuts)",
-      details: "Built a minimalist macOS menu bar controller and Siri Shortcuts app to control a BLE RGB lamp without the vendor app.",
-      achievements: [
-        "One-click power toggle, color presets, and brightness slider from the menu bar",
-        "Siri Shortcuts for on/off, brightness, preset colors, and custom RGB",
-        "Direct BLE control with no account, cloud, or ads",
-        "Reverse-engineered BLE protocol for reliable local control"
+      description: "Local BLE lamp control through a macOS menu bar app and Siri Shortcuts.",
+      links: [
+        { href: "https://github.com/JacksonMaroon/LampMenuBar", label: "Menu Bar" },
+        { href: "https://github.com/JacksonMaroon/LampShortcuts", label: "Shortcuts" },
       ],
-      links: {
-        github: "https://github.com/JacksonMaroon/LampMenuBar",
-        githubLabel: "Menu Bar",
-        githubSecondary: "https://github.com/JacksonMaroon/LampShortcuts",
-        githubSecondaryLabel: "Shortcuts"
-      },
-      period: "Jan. 2026"
-    }
+    },
   ];
 
   return (
@@ -82,7 +65,7 @@ const SimpleProjects = () => {
         </h2>
 
         <div className="space-y-12">
-          {projects.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <article key={index} className="bg-card rounded-lg border p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-primary/50" aria-labelledby={`project-${index}`}>
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">
                 <div className="flex-1">
@@ -107,15 +90,7 @@ const SimpleProjects = () => {
                     <Button variant="outline" size="sm" asChild>
                       <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                         <Github className="w-4 h-4" />
-                        {project.links.githubLabel ?? "Code"}
-                      </a>
-                    </Button>
-                  )}
-                  {project.links.githubSecondary && (
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={project.links.githubSecondary} target="_blank" rel="noopener noreferrer">
-                        <Github className="w-4 h-4" />
-                        {project.links.githubSecondaryLabel ?? "Code"}
+                        Code
                       </a>
                     </Button>
                   )}
@@ -135,6 +110,28 @@ const SimpleProjects = () => {
               </div>
             </article>
           ))}
+        </div>
+
+        <div className="mt-14 border-t border-border/60 pt-10">
+          <h3 className="mb-6 text-xl font-semibold">Other builds</h3>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {otherBuilds.map((project) => (
+              <article key={project.title} className="rounded-lg border bg-card p-5">
+                <h4 className="font-semibold">{project.title}</h4>
+                <p className="mt-2 text-sm text-muted-foreground">{project.description}</p>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {project.links.map((link) => (
+                    <Button key={link.href} variant="outline" size="sm" asChild>
+                      <a href={link.href} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4" />
+                        {link.label}
+                      </a>
+                    </Button>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

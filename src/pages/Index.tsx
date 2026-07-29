@@ -12,7 +12,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Seo
         title="Jackson Maroon"
-        description="Strategy Consultant. Building with AI."
+        description="Business Analyst at Kearney. Building with AI."
         canonical="https://jacksonmaroon.com/"
       />
       <a

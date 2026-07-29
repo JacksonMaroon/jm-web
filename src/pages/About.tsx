@@ -5,13 +5,13 @@ const About = () => {
   return (
     <>
       <Seo
-        title="About Jackson Maroon | Strategy & AI Builder"
-        description="A detailed bio of Jackson Maroon, a strategy consultant in training focused on analytics, product, and AI."
+        title="About Jackson Maroon | Business Analyst & AI Builder"
+        description="A detailed bio of Jackson Maroon, a Kearney Business Analyst focused on operations, analytics, product, and practical AI."
         canonical="https://jacksonmaroon.com/about"
       />
       <LongformPage
         title="About Jackson Maroon"
-        summary="A detailed look at the experiences, values, and projects that shape how I work as a strategy and product minded builder."
+        summary="A detailed look at the experiences, values, and projects that shape how I work as a business analyst and independent builder."
         eyebrow="About"
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
         relatedLinks={[
@@ -38,10 +38,9 @@ const About = () => {
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-foreground">Background and focus</h2>
           <p>
-            I am a strategy consultant in training who cares about the space between rigorous analysis and
+            I am a Business Analyst at Kearney in New York who cares about the space between rigorous analysis and
             good human judgment. I graduated from Washington and Lee University with a B.S. in Business
-            Administration and a minor in Data Science, and I am joining Kearney in New York City as a
-            Business Analyst. The through line across my work is simple: find the
+            Administration and a minor in Data Science. The through line across my work is simple: find the
             decisions that matter, build the smallest set of insights that can move them, and make the
             story easy to act on.
           </p>
@@ -115,8 +114,8 @@ const About = () => {
       <section className="space-y-4">
         <h2 className="text-xl font-semibold text-foreground">Looking ahead</h2>
         <p>
-          I am excited to start at Kearney and work on problems that sit at the intersection of growth,
-          operations, and technology. Long term, I want to build AI tools that make knowledge work
+          At Kearney, I work on problems that sit at the intersection of operations, analytics, and
+          technology. Long term, I want to build AI tools that make knowledge work
           clearer, faster, and more humane. That means systems that respect privacy, explain their
           reasoning, and support the people closest to the decision, not just the people with the
           loudest voice.
@@ -126,7 +125,7 @@ const About = () => {
           love to connect. I am especially interested in projects where customer insight can reshape
           how a team works, not just what it ships. In the meantime, I will keep learning in public
           through these essays and case studies, and I will keep shipping the things I wish I had as a
-          student and future consultant.
+          student, analyst, and builder.
         </p>
       </section>
     </LongformPage>
