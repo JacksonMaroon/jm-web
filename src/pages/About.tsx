@@ -16,16 +16,16 @@ const About = () => {
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
         relatedLinks={[
           {
-            eyebrow: "Thoughts",
-            title: "Building Nexo",
-            description: "How I researched, scoped, and shipped a professional matchmaking platform.",
-            href: "/thoughts/nexo",
+            eyebrow: "Case study",
+            title: "NYC housing search",
+            description: "How I built, operated, and intentionally decommissioned a production system.",
+            href: "/thoughts/nyc-housing-system",
           },
           {
-            eyebrow: "Thoughts",
-            title: "AI in consulting",
-            description: "My perspective on using AI tools responsibly in client work.",
-            href: "/thoughts/ai",
+            eyebrow: "Co-built",
+            title: "Building Nexo",
+            description: "My product leadership and research work on a team-built platform.",
+            href: "/thoughts/nexo",
           },
           {
             eyebrow: "Home",
@@ -90,18 +90,25 @@ const About = () => {
       <section className="space-y-4">
         <h2 className="text-xl font-semibold text-foreground">Building and leadership</h2>
         <p>
-          I spend a lot of time building, not just planning. I led the product development of Nexo, a
-          professional matchmaking platform built to make career networking less random and more
-          intentional. The project pushed me to run deep user research, define a tight MVP, and ship
-          quickly with a small engineering team. We won a campus venture competition and learned the
-          value of focus, especially when early feedback shows what users actually care about.
+          I spend a lot of time building, not just planning. Table Scout turns a curated restaurant
+          list into one read-only availability search across Resy and OpenTable. Canary MLX brings a
+          state-of-the-art speech-recognition model to Apple Silicon for fast local inference. Both
+          projects reflect the kind of work I enjoy most: taking a messy workflow or technical
+          constraint and turning it into a tool someone can actually use.
         </p>
         <p>
-          Another highlight is FlexContent Calendar, an AI powered content automation tool for
-          financial consultants. That project sharpened my interest in practical AI. We experimented
-          with multiple models, used feedback loops to raise output quality, and built workflows that
-          saved time for teams with limited bandwidth. It reinforced my belief that AI is most useful
-          when it is grounded in a human workflow instead of trying to replace it.
+          I also built and operated a cloud-based NYC housing discovery system with separate search
+          lanes, ranking logic, stateful duplicate suppression, scheduled alerts, and failure
+          recovery. When it had served its purpose, I preserved a restorable snapshot and
+          intentionally decommissioned the infrastructure. That experience taught me that production
+          automation is as much about observability, state, and responsible shutdown as it is about
+          the initial build.
+        </p>
+        <p>
+          Nexo was a team-built professional matchmaking platform where I led product development,
+          user research, prioritization, and launch planning alongside the engineers who implemented
+          the application. We won a campus venture competition and learned the value of focus,
+          especially when early feedback shows what users actually care about.
         </p>
         <p>
           At Washington and Lee, I served as Head AI Fellow for the AI Lab and president of Out in

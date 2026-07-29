@@ -5,15 +5,15 @@ const Nexo = () => {
   return (
     <>
       <Seo
-        title="Building Nexo | Jackson Maroon"
-        description="A deep dive on building Nexo, a professional matchmaking platform, covering research, MVP decisions, and go-to-market."
+        title="Co-building Nexo | Jackson Maroon"
+        description="A case study on Jackson Maroon's product leadership, user research, prioritization, and launch work for the team-built Nexo platform."
         canonical="https://jacksonmaroon.com/thoughts/nexo"
         ogType="article"
       />
       <LongformPage
-        title="Building Nexo: a deep dive"
-        summary="A closer look at how I scoped, researched, and shipped Nexo, a professional matchmaking platform designed to make career networking more intentional."
-        eyebrow="Thoughts"
+        title="Co-building Nexo: a product case study"
+        summary="A closer look at my product leadership, user research, prioritization, and launch work on a team-built professional matchmaking platform."
+        eyebrow="Co-built project"
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Thoughts" },
@@ -33,13 +33,22 @@ const Nexo = () => {
             href: "/thoughts/ai",
           },
           {
-            eyebrow: "Home",
-            title: "Portfolio overview",
-            description: "Back to the main page for projects and experience highlights.",
-            href: "/",
+            eyebrow: "Case study",
+            title: "NYC housing search",
+            description: "How I built and operated a cloud-based discovery system.",
+            href: "/thoughts/nyc-housing-system",
           },
         ]}
       >
+        <section className="rounded-lg border border-border bg-muted/30 p-5">
+          <h2 className="text-lg font-semibold text-foreground">My role and the team</h2>
+          <p className="mt-2">
+            Nexo was a collaborative venture. I led product development, including research,
+            prioritization, user testing, and launch planning. The application itself was implemented
+            with two engineering teammates. This case study focuses on the product work I directly
+            owned and the decisions we made together.
+          </p>
+        </section>
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-foreground">The problem we saw</h2>
           <p>

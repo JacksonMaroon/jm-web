@@ -9,9 +9,15 @@ const exploreLinks = [
     href: "/about",
   },
   {
-    eyebrow: "Thoughts",
+    eyebrow: "Case study",
+    title: "NYC housing search",
+    description: "How I built, operated, and intentionally decommissioned a cloud-based discovery system.",
+    href: "/thoughts/nyc-housing-system",
+  },
+  {
+    eyebrow: "Co-built",
     title: "Building Nexo",
-    description: "The research, experiments, and product decisions behind my matchmaking platform.",
+    description: "My product leadership, research, and launch work on a team-built matchmaking platform.",
     href: "/thoughts/nexo",
   },
   {
@@ -31,11 +37,11 @@ const SimpleExplore = () => {
             Explore more
           </h2>
           <p className="max-w-2xl text-muted-foreground">
-            Short reads on my background, the Nexo build, and how I use AI in consulting.
+            Short reads on my background, production systems, product work, and practical AI.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {exploreLinks.map((link) => (
             <Card
               key={link.href}
