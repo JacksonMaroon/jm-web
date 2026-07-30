@@ -54,16 +54,6 @@ const SimpleProjects = () => {
       ],
     },
     {
-      title: "Sourceway",
-      description: "A procurement workflow demo that turns fragmented RFQ data into savings opportunities and sourcing actions.",
-      links: [],
-    },
-    {
-      title: "Vapi / Hermes Phone Agent",
-      description: "A production phone-agent service integrating Vapi, Twilio, structured briefs, tool handling, and post-call logging.",
-      links: [],
-    },
-    {
       title: "GLP-1 Disruption Dashboard",
       description: "An interactive analysis of how GLP-1 adoption could reshape demand across food, healthcare, and consumer markets.",
       links: [

@@ -10,7 +10,6 @@
   "rewrites": [
     { "source": "/about", "destination": "/" },
     { "source": "/thoughts/nexo", "destination": "/" },
-    { "source": "/thoughts/ai", "destination": "/" },
     { "source": "/thoughts/nyc-housing-system", "destination": "/" }
   ],
   "headers": [

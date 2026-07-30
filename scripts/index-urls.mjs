@@ -43,7 +43,6 @@ const URLS_TO_INDEX = [
   `${SITE_URL}/`,
   `${SITE_URL}/about`,
   `${SITE_URL}/thoughts/nexo`,
-  `${SITE_URL}/thoughts/ai`,
   `${SITE_URL}/thoughts/nyc-housing-system`,
 ];
 

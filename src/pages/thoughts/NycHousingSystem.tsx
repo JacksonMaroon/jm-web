@@ -33,10 +33,10 @@ const NycHousingSystem = () => {
             href: "/thoughts/nexo",
           },
           {
-            eyebrow: "Thoughts",
-            title: "AI in consulting",
-            description: "How I think about bringing AI into client work responsibly.",
-            href: "/thoughts/ai",
+            eyebrow: "Home",
+            title: "Portfolio overview",
+            description: "Current projects, experience, and education.",
+            href: "/",
           },
         ]}
       >

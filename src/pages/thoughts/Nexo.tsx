@@ -5,32 +5,26 @@ const Nexo = () => {
   return (
     <>
       <Seo
-        title="Co-building Nexo | Jackson Maroon"
-        description="A case study on Jackson Maroon's product leadership, user research, prioritization, and launch work for the team-built Nexo platform."
+        title="Nexo Product Case Study | Jackson Maroon"
+        description="Jackson Maroon's product research, prioritization, testing, and launch work on the team-built Nexo matchmaking platform."
         canonical="https://jacksonmaroon.com/thoughts/nexo"
         ogType="article"
       />
       <LongformPage
-        title="Co-building Nexo: a product case study"
-        summary="A closer look at my product leadership, user research, prioritization, and launch work on a team-built professional matchmaking platform."
+        title="Nexo: from research to MVP"
+        summary="The product research, scope decisions, and launch work I owned on a team-built professional matchmaking platform."
         eyebrow="Co-built project"
         breadcrumbs={[
           { label: "Home", href: "/" },
-          { label: "Thoughts" },
-          { label: "Building Nexo" },
+          { label: "Case studies" },
+          { label: "Nexo" },
         ]}
         relatedLinks={[
           {
             eyebrow: "About",
             title: "Detailed bio",
-            description: "The background that shaped how I approach product and strategy work.",
+            description: "My background in consulting, analytics, and independent building.",
             href: "/about",
-          },
-          {
-            eyebrow: "Thoughts",
-            title: "AI in consulting",
-            description: "How I think about bringing AI into client work responsibly.",
-            href: "/thoughts/ai",
           },
           {
             eyebrow: "Case study",
@@ -38,143 +32,63 @@ const Nexo = () => {
             description: "How I built and operated a cloud-based discovery system.",
             href: "/thoughts/nyc-housing-system",
           },
+          {
+            eyebrow: "Home",
+            title: "Portfolio overview",
+            description: "Current projects, experience, and education.",
+            href: "/",
+          },
         ]}
       >
         <section className="rounded-lg border border-border bg-muted/30 p-5">
-          <h2 className="text-lg font-semibold text-foreground">My role and the team</h2>
+          <h2 className="text-lg font-semibold text-foreground">My role</h2>
           <p className="mt-2">
             Nexo was a collaborative venture. I led product development, including research,
-            prioritization, user testing, and launch planning. The application itself was implemented
-            with two engineering teammates. This case study focuses on the product work I directly
-            owned and the decisions we made together.
+            prioritization, user testing, and launch planning. Two engineering teammates implemented
+            the application. This case study covers the work I directly owned and the decisions we
+            made together.
           </p>
         </section>
+
         <section className="space-y-4">
-          <h2 className="text-xl font-semibold text-foreground">The problem we saw</h2>
+          <h2 className="text-xl font-semibold text-foreground">The problem and the research</h2>
           <p>
-            Nexo started with a simple frustration: career networking is often random, high friction,
-            and biased toward people who already have access. Students and early career professionals
-            are told to network, but the process is usually a cold outreach lottery. On the other side,
-            professionals want to help, yet they are overwhelmed with vague requests and not enough
-            context on how to be useful. We believed there was room for a product that made both sides
-            feel respected and prepared.
+            We started with a narrow question: why do students struggle to turn career advice into a
+            useful first conversation? Before building, we ran more than 50 interviews with students,
+            alumni, and early-career professionals. We asked about recent outreach rather than
+            hypothetical preferences.
           </p>
           <p>
-            We framed the challenge as a matchmaking problem. If we could learn what someone was
-            trying to become, what they already knew, and what kind of support they needed, we could
-            design introductions that were more meaningful than a standard LinkedIn connection. The
-            goal was not to replace relationships, but to remove the awkward first step.
+            The recurring problem was not access alone. Requests were often vague, and potential
+            mentors lacked enough context to know how to help. That pushed us toward structured
+            profiles, goal-based matching, and a short conversation guide for each introduction.
           </p>
         </section>
 
-      <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-foreground">Research and insight</h2>
-        <p>
-          Before building, we ran more than 50 user interviews across students, alumni, and early
-          career professionals. We focused on stories about recent networking experiences rather than
-          abstract preferences. That helped us separate what people said they wanted from what they
-          actually did when they reached out to someone.
-        </p>
-        <ul className="space-y-2 text-muted-foreground">
-          <li className="flex items-start gap-2">
-            <span className="text-primary">•</span>
-            Most outreach fails because the request is vague and the asker cannot articulate what
-            they need.
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="text-primary">•</span>
-            Professionals want to help but do not want to do the work of defining the conversation.
-          </li>
-          <li className="flex items-start gap-2">
-            <span className="text-primary">•</span>
-            People are more willing to meet when the match is tied to a shared background or a clear
-            purpose.
-          </li>
-        </ul>
-        <p>
-          Those insights pushed us to focus on two things: stronger context on both sides of the
-          match, and a clear prompt for what the first conversation should cover.
-        </p>
-      </section>
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-foreground">Scoping and shipping</h2>
+          <p>
+            We shipped the MVP in four weeks. The core flow covered profile creation, matching, and
+            scheduling. After early tests, we removed roughly 40 percent of the original feature list
+            because those additions did not improve the main flow.
+          </p>
+          <p>
+            I maintained the product backlog, organized weekly tests, translated feedback into scope
+            decisions, and worked with the engineering team on launch sequencing. Keeping the build
+            small let us spend more time improving the quality and context of each match.
+          </p>
+        </section>
 
-      <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-foreground">Product thesis</h2>
-        <p>
-          Our thesis was that better structure would unlock better relationships. We designed Nexo so
-          that a user could express their goals, constraints, and interests in a compact profile. On
-          the professional side, we emphasized the topics they were most willing to discuss and the
-          type of help they could offer. The matching system then prioritized alignment on goals,
-          timing, and shared context, not just job titles.
-        </p>
-        <p>
-          We also added a conversation guide to every match. That guide contained a short, tailored
-          agenda and a few questions to reduce the awkwardness of the first call. It was a small
-          feature with outsized impact because it set expectations and helped people show up prepared.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-foreground">MVP build</h2>
-        <p>
-          We shipped the MVP in four weeks with two engineers and a tight scope. The core flow was
-          profile creation, matching, and a simple scheduling layer. Everything else was treated as
-          optional. We cut about 40 percent of the original feature list after the first round of user
-          tests because the extra features did not change user behavior. That decision kept the build
-          light and helped us focus on the quality of the matches.
-        </p>
-        <p>
-          I led product development and worked closely with engineering on prioritization, user
-          feedback loops, and launch planning. We tested weekly with a small cohort, captured
-          conversion drop offs, and kept a rolling backlog of friction points. This cadence let us
-          ship quickly while still making decisions grounded in evidence.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-foreground">Go to market and outcomes</h2>
-        <p>
-          We started with a focused launch at Washington and Lee to keep feedback tight. The go to
-          market strategy centered on student organizations, alumni groups, and a waitlist that
-          allowed us to pace onboarding. We also experimented with positioning, shifting from a
-          generic networking pitch to a clearer promise: better first conversations and more
-          confidence in how to ask for help.
-        </p>
-        <p>
-          The project earned first place at a campus venture competition and attracted early interest
-          from students who felt unsure about outreach. The clearest signal of success was not just
-          sign ups but follow up behavior. People who completed their first call were much more
-          likely to request another match, which reinforced the idea that structured context and
-          purpose make networking less intimidating.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-foreground">What I learned</h2>
-        <p>
-          The biggest lesson was focus. It is tempting to add features to solve every edge case, but
-          the wins came from making the first match feel obvious and low effort. Another lesson was
-          that trust is earned in small moments. If the onboarding copy feels generic or the match
-          context feels thin, the entire experience breaks down. We learned to obsess over those
-          details because they were the product.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-foreground">What I would build next</h2>
-        <p>
-          If I were to continue, I would focus on deeper feedback loops and stronger outcomes
-          tracking. For example, I would test lightweight follow ups that capture what each person
-          gained from the conversation and use that data to refine matching criteria. I would also
-          explore partnerships with career centers or professional groups to broaden the match pool
-          without losing the feeling of trust that made the early community work.
-        </p>
-        <p>
-          Nexo reminded me that good product work is equal parts empathy and discipline. It is
-          listening closely, making tough cuts, and shipping with intent. That is the approach I carry
-          into every new build.
-        </p>
-      </section>
-    </LongformPage>
+        <section className="space-y-4">
+          <h2 className="text-xl font-semibold text-foreground">Outcome</h2>
+          <p>
+            We launched with a focused Washington and Lee cohort and won first place in a campus
+            venture competition. The most useful lesson was practical: interviews only create value
+            when they change what gets built. In this case, the research helped us remove features,
+            clarify the promise, and ship a smaller product faster.
+          </p>
+        </section>
+      </LongformPage>
     </>
   );
 };

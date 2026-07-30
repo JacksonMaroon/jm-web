@@ -20,12 +20,6 @@ const exploreLinks = [
     description: "My product leadership, research, and launch work on a team-built matchmaking platform.",
     href: "/thoughts/nexo",
   },
-  {
-    eyebrow: "Thoughts",
-    title: "AI in consulting",
-    description: "How I think about using AI tools without losing judgment or client trust.",
-    href: "/thoughts/ai",
-  },
 ];
 
 const SimpleExplore = () => {
@@ -37,11 +31,11 @@ const SimpleExplore = () => {
             Explore more
           </h2>
           <p className="max-w-2xl text-muted-foreground">
-            Short reads on my background, production systems, product work, and practical AI.
+            Short reads on my background, production systems, and product work.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
           {exploreLinks.map((link) => (
             <Card
               key={link.href}

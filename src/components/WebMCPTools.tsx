@@ -19,7 +19,6 @@ const ROUTES = [
   { path: "/", title: "Home" },
   { path: "/about", title: "About" },
   { path: "/thoughts/nexo", title: "Thought: Nexo" },
-  { path: "/thoughts/ai", title: "Thought: AI" },
   { path: "/thoughts/nyc-housing-system", title: "Case study: NYC Housing Search" },
 ] as const;
 
@@ -59,7 +58,7 @@ export default function WebMCPTools() {
           path: {
             type: "string",
             description:
-              "Pathname to navigate to, such as /, /about, /thoughts/nexo, /thoughts/ai, or /thoughts/nyc-housing-system.",
+              "Pathname to navigate to, such as /, /about, /thoughts/nexo, or /thoughts/nyc-housing-system.",
           },
         },
         required: ["path"],
