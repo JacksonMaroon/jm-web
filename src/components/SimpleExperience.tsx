@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { companyLogos, type CompanyLogoKey } from "@/data/companyLogos";
-import { Calendar, CheckCircle2, MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 
 const SimpleExperience = () => {
   const experiences: Array<{
@@ -11,7 +11,6 @@ const SimpleExperience = () => {
     location: string;
     companyUrl: string;
     logoKey: CompanyLogoKey;
-    achievements: string[];
   }> = [
       {
         company: "Kearney",
@@ -20,12 +19,6 @@ const SimpleExperience = () => {
         location: "New York, NY",
         companyUrl: "https://www.kearney.com",
         logoKey: "kearney",
-        achievements: [
-          "Supported a direct-material supply chain transformation across category sourcing and integrated business planning",
-          "Built procurement analytics tooling that cut a recurring workflow by 80%",
-          "Delivered $18M in procurement decision visibility",
-          "Led training and documentation that helped drive 90% adoption"
-        ]
       },
       {
         company: "University of Pennsylvania, Center for Addiction Policy",
@@ -34,12 +27,6 @@ const SimpleExperience = () => {
         location: "Philadelphia, PA",
         companyUrl: "https://www.med.upenn.edu/",
         logoKey: "perelman",
-        achievements: [
-          "Accepted into NIH program (sub-15% acceptance rate)",
-          "Analyzed 40K+ patient journeys to identify behavioral patterns",
-          "Found 3 intervention points that improved outcomes by 25%",
-          "Discovered an 11x drop in treatment efficacy for a specific patient segment"
-        ]
       },
       {
         company: "W&L Office of Health Promotion",
@@ -48,11 +35,6 @@ const SimpleExperience = () => {
         location: "Lexington, VA",
         companyUrl: "https://my.wlu.edu/office-of-health-promotion",
         logoKey: "wlu",
-        achievements: [
-          "Launched campus-wide mental health initiative",
-          "Hit 3000+ student engagements",
-          "Improved satisfaction scores by 10% based on actual feedback"
-        ]
       }
     ];
 
@@ -117,14 +99,6 @@ const SimpleExperience = () => {
                   </div>
                 </div>
 
-                <ul className="grid gap-3 text-sm text-muted-foreground sm:grid-cols-2">
-                  {exp.achievements.map((achievement, i) => (
-                    <li key={i} className="flex items-start gap-3 rounded-lg border border-transparent bg-muted/30 p-3">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 text-primary" />
-                      <span>{achievement}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
             </Card>
           ))}
