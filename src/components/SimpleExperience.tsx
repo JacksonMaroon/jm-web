@@ -11,11 +11,13 @@ const SimpleExperience = () => {
     location: string;
     companyUrl: string;
     logoKey: CompanyLogoKey;
+    previousRole?: { title: string; period: string };
   }> = [
       {
         company: "Kearney",
-        role: "Summer Business Analyst",
-        period: "Jun. 2025 – Aug. 2025",
+        role: "Business Analyst",
+        period: "Current",
+        previousRole: { title: "Summer Business Analyst", period: "Jun. 2025 – Aug. 2025" },
         location: "New York, NY",
         companyUrl: "https://www.kearney.com",
         logoKey: "kearney",
@@ -99,6 +101,12 @@ const SimpleExperience = () => {
                   </div>
                 </div>
 
+                {exp.previousRole && (
+                  <div className="ml-10 border-l-2 border-primary/30 pl-6 sm:ml-10 sm:pl-[4.5rem]">
+                    <h4 className="text-lg font-medium">{exp.previousRole.title}</h4>
+                    <p className="mt-1 text-sm text-muted-foreground">{exp.previousRole.period}</p>
+                  </div>
+                )}
               </div>
             </Card>
           ))}
