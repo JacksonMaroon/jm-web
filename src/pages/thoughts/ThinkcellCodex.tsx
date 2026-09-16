@@ -19,9 +19,8 @@ const ThinkcellCodex = () => (
         { label: "Think-cell for Codex" },
       ]}
       relatedLinks={[
-        { eyebrow: "Case study", title: "NYC housing search", description: "Building and operating an automated discovery system.", href: "/thoughts/nyc-housing-system" },
         { eyebrow: "About", title: "My background", description: "How consulting, analytics, and product building connect in my work.", href: "/about" },
-        { eyebrow: "Projects", title: "More of my work", description: "Explore Table Scout, Canary MLX, and other builds.", href: "/#projects" },
+        { eyebrow: "Projects", title: "More of my work", description: "Return to my experience, featured project, and education.", href: "/#projects" },
       ]}
     >
       <section className="space-y-4">

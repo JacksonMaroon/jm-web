@@ -75,8 +75,8 @@ const About = () => {
             explicit constraints, and measurable checks over a long feature list.
           </p>
           <p>
-            At Washington and Lee, I served as Head AI Fellow and president of Out in STEM. Those
-            roles gave me practice teaching technical ideas, coordinating teams, and making projects
+            At Washington and Lee, I served as Head AI Fellow. That
+            role gave me practice teaching technical ideas, coordinating teams, and making projects
             accessible to people with different backgrounds.
           </p>
         </section>
