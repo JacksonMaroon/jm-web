@@ -16,6 +16,7 @@ type WebMCPNavigator = Navigator & {
 };
 
 const ROUTES = [
+  { path: "/thoughts/thinkcell-codex", title: "Case study: Think-cell for Codex" },
   { path: "/", title: "Home" },
   { path: "/about", title: "About" },
   { path: "/thoughts/nexo", title: "Thought: Nexo" },

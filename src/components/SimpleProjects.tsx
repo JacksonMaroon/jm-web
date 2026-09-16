@@ -3,7 +3,27 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
 
 const SimpleProjects = () => {
-  const featuredProjects = [
+  const featuredProjects: {
+    title: string;
+    description: string;
+    details: string;
+    achievements: string[];
+    links: { github?: string; website?: string; caseStudy?: string };
+    period: string;
+  }[] = [
+    {
+      title: "Think-cell for Codex",
+      description: "Turn New Data into Editable Presentation Charts",
+      details: "Built a Codex plugin that brings AI into the chart workflows analysts already use: create slides from existing think-cell designs, update supported chart data, and keep the result editable in PowerPoint.",
+      achievements: [
+        "Reuse existing chart designs and formatting",
+        "Update supported charts from supplied data",
+        "Check data accuracy and preserve surrounding content",
+        "Reopen in PowerPoint and render previews for review",
+      ],
+      links: { caseStudy: "/thoughts/thinkcell-codex" },
+      period: "Sep. 2026 · Experimental",
+    },
     {
       title: "Table Scout",
       description: "Cross-Provider Restaurant Availability",
@@ -88,6 +108,14 @@ const SimpleProjects = () => {
                 </div>
 
                 <div className="flex gap-2">
+                  {project.links.caseStudy && (
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.links.caseStudy}>
+                        Read case study
+                        <ArrowUpRight className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  )}
                   {project.links.website && (
                     <Button variant="outline" size="sm" asChild>
                       <a href={project.links.website} target="_blank" rel="noopener noreferrer">

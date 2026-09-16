@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
 import Nexo from "./pages/thoughts/Nexo";
+import ThinkcellCodex from "./pages/thoughts/ThinkcellCodex";
 import NycHousingSystem from "./pages/thoughts/NycHousingSystem";
 import WebMCPTools from "./components/WebMCPTools";
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/thoughts/nexo" element={<Nexo />} />
           <Route path="/thoughts/nyc-housing-system" element={<NycHousingSystem />} />
+          <Route path="/thoughts/thinkcell-codex" element={<ThinkcellCodex />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
