@@ -79,7 +79,7 @@ const ThinkcellCodex = () => (
       <section className="rounded-lg border border-primary/20 bg-muted/30 p-5 space-y-3">
         <h2 className="text-lg font-semibold text-foreground">Current status</h2>
         <p>
-          This is a private, experimental desktop project, built by me with Codex assistance.
+          This is a private desktop project, built by me with Codex assistance.
           It requires Windows, desktop PowerPoint, and licensed think-cell. Support depends on the
           source chart and requested change; it does not generate arbitrary charts from scratch.
           Outputs still need visual and semantic review.

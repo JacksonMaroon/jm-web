@@ -22,7 +22,7 @@ const SimpleProjects = () => {
         "Reopen in PowerPoint and render previews for review",
       ],
       links: { caseStudy: "/thoughts/thinkcell-codex" },
-      period: "Sep. 2026 · Experimental",
+      period: "Sep. 2026",
     },
   ];
 
