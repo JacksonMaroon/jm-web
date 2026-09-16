@@ -8,6 +8,7 @@
     }
   ],
   "rewrites": [
+    { "source": "/thoughts/thinkcell-codex", "destination": "/" },
     { "source": "/about", "destination": "/" },
     { "source": "/thoughts/nexo", "destination": "/" },
     { "source": "/thoughts/nyc-housing-system", "destination": "/" }
