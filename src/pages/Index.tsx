@@ -16,14 +16,14 @@ const Index = () => {
   };
   return (
   <div className="compact-site" data-theme={theme}>
-    <Seo title="Jackson Maroon" description="Business analyst. I build practical AI tools." canonical="https://jacksonmaroon.com/" />
+    <Seo title="Jackson Maroon" description="AI-native generalist." canonical="https://jacksonmaroon.com/" />
     <a className="compact-skip" href="#content">Skip to content</a>
     <main id="content" className="compact-page">
       <header className="compact-header">
         <div>
           <p className="compact-location">New York, NY</p>
           <h1>Jackson Maroon<span>.</span></h1>
-          <p className="compact-intro">Business analyst. I build practical AI tools.</p>
+          <p className="compact-intro">AI-native generalist.</p>
           <nav aria-label="Contact">
             <a href="mailto:jackson.maroon4@gmail.com">Email ↗</a>
             <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn ↗</a>
