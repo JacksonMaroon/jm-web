@@ -60,8 +60,8 @@ const Index = () => {
       <section className="compact-section" aria-labelledby="building-heading">
         <h2 id="building-heading">Building</h2>
         <article className="compact-project">
-          <div className="compact-role"><h3>Think-cell for Codex</h3><time>2026</time></div>
-          <p>Turn new data into editable PowerPoint charts. A Codex plugin that reuses existing think-cell designs, updates chart data, and checks the result.</p>
+          <div className="compact-role"><h3>Thinkcell Autopilot</h3><time>2026</time></div>
+          <p>Let your AI agent handle the charts.</p>
         </article>
       </section>
 
