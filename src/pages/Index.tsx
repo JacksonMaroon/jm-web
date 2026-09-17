@@ -21,9 +21,9 @@ const Index = () => {
     <main id="content" className="compact-page">
       <header className="compact-header">
         <div>
-          <p className="compact-location">New York, NY</p>
           <h1>Jackson Maroon<span>.</span></h1>
           <p className="compact-intro">AI-native generalist.</p>
+          <p className="compact-location">New York, NY</p>
           <nav aria-label="Contact">
             <a href="mailto:jackson.maroon4+website@gmail.com">Email ↗</a>
             <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn ↗</a>

@@ -8,11 +8,11 @@
 .compact-site a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-radius: 2px; }
 .compact-header { display: flex; align-items: flex-start; gap: 32px; padding-bottom: 34px; }
 .compact-header > div { flex: 1; }
-.compact-location { font-size: 12px; color: var(--subtle); margin-bottom: 9px; }
+.compact-location { font-size: 12px; color: var(--subtle); margin-top: 5px; }
 .compact-header h1 { font-size: clamp(30px, 5vw, 38px); letter-spacing: -1.6px; line-height: 1.15; font-weight: 600; }
 .compact-header h1 span { color: var(--link); }
 .compact-intro { margin-top: 14px; max-width: 475px; color: var(--secondary-ink); font-size: 15px; line-height: 1.65; }
-.compact-portrait { position: relative; display: block; flex-shrink: 0; overflow: hidden; border-radius: 50%; width: 72px; height: 72px; margin-top: 27px; }
+.compact-portrait { position: relative; display: block; flex-shrink: 0; overflow: hidden; border-radius: 50%; width: 72px; height: 72px; margin-top: 0; }
 .compact-portrait .portrait-light { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
 .compact-portrait .portrait-dark { display: none; position: absolute; width: 210%; max-width: none; height: auto; left: -62%; top: -22%; }
 .compact-header nav a { white-space: nowrap; }
