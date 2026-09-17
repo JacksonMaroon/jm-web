@@ -12,7 +12,9 @@
 .compact-header h1 { font-size: clamp(30px, 5vw, 38px); letter-spacing: -1.6px; line-height: 1.15; font-weight: 600; }
 .compact-header h1 span { color: var(--link); }
 .compact-intro { margin-top: 14px; max-width: 475px; color: var(--secondary-ink); font-size: 15px; line-height: 1.65; }
-.compact-header img { border-radius: 50%; width: 72px; height: 72px; object-fit: cover; margin-top: 27px; object-position: 50% 35%; }
+.compact-portrait { position: relative; display: block; flex-shrink: 0; overflow: hidden; border-radius: 50%; width: 72px; height: 72px; margin-top: 27px; }
+.compact-portrait .portrait-light { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
+.compact-portrait .portrait-dark { display: none; position: absolute; width: 210%; max-width: none; height: auto; left: -62%; top: -22%; }
 .compact-header nav a { white-space: nowrap; }
 .compact-header nav { display: flex; gap: 23px; margin-top: 18px; font-size: 12px; font-weight: 500; }
 .compact-section { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 25px; border-top: 1px solid var(--rule); padding: 25px 0; }
@@ -38,7 +40,7 @@
 @media (max-width: 600px) {
   .compact-page { padding: 38px 24px 24px; }
   .compact-header { gap: 16px; padding-bottom: 28px; }
-  .compact-header img { width: 52px; height: 52px; }
+  .compact-portrait { width: 52px; height: 52px; }
   .compact-section { grid-template-columns: 1fr; gap: 12px; padding: 22px 0; }
   .compact-role { flex-wrap: wrap; gap: 1px 12px; }
   .compact-role time { margin-left: auto; }
@@ -53,4 +55,11 @@
 .compact-page footer { align-items: center; gap: 16px; flex-wrap: wrap; }
 @media (max-width: 380px) {
   .compact-role time { width: 100%; margin-left: 0; }
+}
+
+.compact-site[data-theme="dark"] .portrait-light { display: none; }
+.compact-site[data-theme="dark"] .portrait-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  .compact-site:not([data-theme="light"]) .portrait-light { display: none; }
+  .compact-site:not([data-theme="light"]) .portrait-dark { display: block; }
 }

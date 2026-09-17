@@ -30,7 +30,10 @@ const Index = () => {
             <a href="https://github.com/JacksonMaroon" target="_blank" rel="noreferrer">GitHub ↗</a>
           </nav>
         </div>
-        <img src="/professional-headshot.jpg" alt="Professional headshot of Jackson Maroon" width="80" height="80" />
+        <span className="compact-portrait">
+          <img className="portrait-light" src="/professional-headshot.jpg" alt="Professional headshot of Jackson Maroon" width="80" height="80" />
+          <img className="portrait-dark" src="/professional-studio.jpg" alt="Professional headshot of Jackson Maroon" width="80" height="80" />
+        </span>
       </header>
 
       <section className="compact-section" aria-labelledby="experience-heading">
