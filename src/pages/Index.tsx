@@ -25,9 +25,9 @@ const Index = () => {
           <p className="compact-intro">AI-native generalist</p>
           <p className="compact-location">New York, NY</p>
           <nav aria-label="Contact">
-            <a href="mailto:jackson.maroon4+website@gmail.com">Email ↗</a>
-            <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-            <a href="https://github.com/JacksonMaroon" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="mailto:jackson.maroon4+website@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/JacksonMaroon" target="_blank" rel="noreferrer">GitHub</a>
           </nav>
         </div>
         <span className="compact-portrait">
@@ -60,7 +60,7 @@ const Index = () => {
       <section className="compact-section" aria-labelledby="building-heading">
         <h2 id="building-heading">Building</h2>
         <article className="compact-project">
-          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">Thinkcell Autopilot ↗</a></h3><time>2026</time></div>
+          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">Thinkcell Autopilot</a></h3><time>2026</time></div>
           <p>Let your AI agent handle the charts.</p>
         </article>
       </section>
