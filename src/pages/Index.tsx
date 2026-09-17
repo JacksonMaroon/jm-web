@@ -22,7 +22,7 @@ const Index = () => {
   };
   return (
   <div className="compact-site" data-theme={theme}>
-    <Seo title="Jackson Maroon" description="AI-native generalist" canonical="https://jacksonmaroon.com/" />
+    <Seo title="Jackson Maroon" description="AI-native generalist based in New York" canonical="https://jacksonmaroon.com/" />
     <a className="compact-skip" href="#content">Skip to content</a>
     <main id="content" className="compact-page">
       <header className="compact-header">
