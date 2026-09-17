@@ -7,15 +7,16 @@
 .compact-site a:hover { color: var(--link); text-decoration: underline; text-underline-offset: 4px; }
 .compact-site a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-radius: 2px; }
 .compact-header { display: flex; align-items: flex-start; gap: 32px; padding-bottom: 34px; }
-.compact-header > div { flex: 1; }
+.compact-header > div { flex: 1; min-width: 0; }
 .compact-location { font-size: 12px; color: var(--subtle); margin-top: 5px; }
 .compact-header h1 { text-align: left; margin: 0; padding: 0; font-size: clamp(30px, 5vw, 38px); letter-spacing: -1.6px; line-height: 1.15; font-weight: 600; }
 .compact-header h1 span { color: var(--link); }
 .compact-intro { margin-top: 14px; max-width: 475px; color: var(--secondary-ink); font-size: 15px; line-height: 1.65; }
 .compact-portrait { position: relative; display: block; flex-shrink: 0; overflow: hidden; border-radius: 50%; width: 72px; height: 72px; margin-top: 0; }
 .compact-portrait .portrait-light { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
-.compact-portrait .portrait-dark { display: none; position: absolute; width: 210%; max-width: none; height: auto; left: -62%; top: -22%; }
-.compact-header nav a { white-space: nowrap; }
+.compact-portrait .portrait-dark { display: none; position: absolute; width: 225%; max-width: none; height: auto; left: -70%; top: -24%; }
+.compact-header nav a { position: relative; white-space: nowrap; }
+.compact-header nav a::after { content: ""; position: absolute; inset: -13px -8px; }
 .compact-header nav { display: flex; gap: 23px; margin-top: 18px; font-size: 12px; font-weight: 500; }
 .compact-section { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 25px; border-top: 1px solid var(--rule); padding: 25px 0; }
 .compact-section h2 { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.3px; color: var(--subtle); padding-top: 3px; }
@@ -31,6 +32,9 @@
 .compact-secondary { color: var(--secondary-ink); font-size: 13px; margin-top: 3px; }
 .compact-note { color: var(--subtle); font-size: 12px; margin-top: 7px; }
 .compact-learning p { font-size: 12px; }
+.compact-honor { display: inline-block; }
+.compact-honor::before { content: "· "; }
+.compact-learning p span::before { content: "· "; }
 .compact-learning p + p { margin-top: 8px; }
 .compact-learning p span { color: var(--subtle); font-size: 12px; margin-left: 6px; }
 .compact-page footer { border-top: 1px solid var(--rule); padding-top: 18px; display: flex; justify-content: space-between; font-size: 12px; color: var(--subtle); }
@@ -44,12 +48,15 @@
   .compact-role { flex-wrap: wrap; gap: 1px 12px; }
   .compact-role time { width: 100%; margin-left: 0; }
   .compact-intro { font-size: 14px; }
+  .compact-honor { display: block; }
+  .compact-honor::before { content: none; }
   .compact-learning p span { display: block; margin-left: 0; }
+  .compact-learning p span::before { content: none; }
 }
 
 
 .compact-theme { display: flex; align-items: center; gap: 8px; }
-.compact-theme select { background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 5px; padding: 4px 6px; font: inherit; }
+.compact-theme select { background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 5px; padding: 8px 8px; min-height: 44px; font: inherit; }
 .compact-theme select:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 .compact-page footer { align-items: center; gap: 16px; flex-wrap: wrap; }
 
@@ -61,3 +68,8 @@
 }
 
 .compact-link-arrow { display: inline-block; width: 12px; height: 12px; margin-left: 3px; vertical-align: -1px; color: var(--subtle); }
+
+@media (max-width: 360px) {
+  .compact-header { gap: 12px; }
+  .compact-header h1 { font-size: 26px; letter-spacing: -1.2px; }
+}

@@ -46,7 +46,7 @@ const Index = () => {
         <h2 id="experience-heading">Experience</h2>
         <div className="compact-entries">
           <article>
-            <h3><a href="https://www.kearney.com" target="_blank" rel="noreferrer">Kearney</a></h3>
+            <h3>Kearney</h3>
             <div className="compact-timeline">
               <div className="compact-role"><p>Business Analyst</p><time>Current</time></div>
               <div className="compact-role"><p>Summer Business Analyst</p><time>Jun – Aug 2025</time></div>
@@ -77,7 +77,7 @@ const Index = () => {
           <div className="compact-role"><h3>Washington and Lee University</h3><time>2026</time></div>
           <p className="compact-secondary">B.S. Business Administration · Minor in Data Science</p>
           <p className="compact-note">Head AI Fellow · Student Consulting Team Lead</p>
-          <p className="compact-note">National Merit Scholar · OΔK · CACI STEM &amp; Gaines Scholarships</p>
+          <p className="compact-note">National Merit Scholar · OΔK <span className="compact-honor">CACI STEM &amp; Gaines Scholarships</span></p>
         </div>
       </section>
 
