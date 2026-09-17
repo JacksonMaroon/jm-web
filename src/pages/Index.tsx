@@ -77,7 +77,7 @@ const Index = () => {
           <div className="compact-role"><h3>Washington and Lee University</h3><time>2026</time></div>
           <p className="compact-secondary">B.S. Business Administration · Minor in Data Science</p>
           <p className="compact-note">Head AI Fellow · Student Consulting Team Lead</p>
-          <p className="compact-note">National Merit Scholar · OΔK <span className="compact-honor">CACI STEM &amp; Gaines Scholarships</span></p>
+          <p className="compact-note">National Merit Scholar</p>
         </div>
       </section>
 

@@ -32,8 +32,6 @@
 .compact-secondary { color: var(--secondary-ink); font-size: 13px; margin-top: 3px; }
 .compact-note { color: var(--subtle); font-size: 12px; margin-top: 7px; }
 .compact-learning p { font-size: 12px; }
-.compact-honor { display: inline-block; }
-.compact-honor::before { content: "· "; }
 .compact-learning p span::before { content: "· "; }
 .compact-learning p + p { margin-top: 8px; }
 .compact-learning p span { color: var(--subtle); font-size: 12px; margin-left: 6px; }
@@ -48,8 +46,6 @@
   .compact-role { flex-wrap: wrap; gap: 1px 12px; }
   .compact-role time { width: 100%; margin-left: 0; }
   .compact-intro { font-size: 14px; }
-  .compact-honor { display: block; }
-  .compact-honor::before { content: none; }
   .compact-learning p span { display: block; margin-left: 0; }
   .compact-learning p span::before { content: none; }
 }
