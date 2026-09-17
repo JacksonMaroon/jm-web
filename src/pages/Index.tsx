@@ -60,7 +60,7 @@ const Index = () => {
       <section className="compact-section" aria-labelledby="building-heading">
         <h2 id="building-heading">Building</h2>
         <article className="compact-project">
-          <div className="compact-role"><h3>Thinkcell Autopilot</h3><time>2026</time></div>
+          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">Thinkcell Autopilot ↗</a></h3><time>2026</time></div>
           <p>Let your AI agent handle the charts.</p>
         </article>
       </section>
