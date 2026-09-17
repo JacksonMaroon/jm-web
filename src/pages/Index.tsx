@@ -83,8 +83,8 @@ const Index = () => {
       <section className="compact-section compact-learning" aria-labelledby="learning-heading">
         <h2 id="learning-heading">Learning</h2>
         <div>
-          <p>Claude Certified Architect – Foundations <span>Anthropic · 2026</span></p>
-          <p>AI Strategy <span>BlueDot Impact · 2026</span></p>
+          <p><a href="https://www.credly.com/badges/d34bae5a-f575-4db4-bb23-399ccc15be5c/public_url" target="_blank" rel="noreferrer">Claude Certified Architect – Foundations <LinkArrow /></a> <span>Anthropic · 2026</span></p>
+          <p><a href="https://bluedot.org/certification?id=reci5N4KkVwv937S4" target="_blank" rel="noreferrer">AGI Strategy <LinkArrow /></a> <span>BlueDot Impact · 2026</span></p>
         </div>
       </section>
       <footer>
