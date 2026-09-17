@@ -28,7 +28,6 @@
 .compact-timeline .compact-role { position: relative; }
 .compact-timeline .compact-role::before { content: ''; position: absolute; left: -16px; top: 8px; width: 5px; height: 5px; background: var(--dot); border-radius: 50%; }
 .compact-project > p { margin-top: 7px; color: var(--secondary-ink); max-width: 490px; font-size: 13px; }
-.compact-case { display: inline-block; margin-top: 12px; font-size: 12px; font-weight: 500; color: var(--link) !important; }
 .compact-secondary { color: var(--secondary-ink); font-size: 13px; margin-top: 3px; }
 .compact-note { color: var(--subtle); font-size: 12px; margin-top: 7px; }
 .compact-learning p { font-size: 12px; }
@@ -43,7 +42,7 @@
   .compact-portrait { width: 52px; height: 52px; }
   .compact-section { grid-template-columns: 1fr; gap: 12px; padding: 22px 0; }
   .compact-role { flex-wrap: wrap; gap: 1px 12px; }
-  .compact-role time { margin-left: auto; }
+  .compact-role time { width: 100%; margin-left: 0; }
   .compact-intro { font-size: 14px; }
   .compact-learning p span { display: block; margin-left: 0; }
 }
@@ -53,9 +52,6 @@
 .compact-theme select { background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 5px; padding: 4px 6px; font: inherit; }
 .compact-theme select:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
 .compact-page footer { align-items: center; gap: 16px; flex-wrap: wrap; }
-@media (max-width: 380px) {
-  .compact-role time { width: 100%; margin-left: 0; }
-}
 
 .compact-site[data-theme="dark"] .portrait-light { display: none; }
 .compact-site[data-theme="dark"] .portrait-dark { display: block; }

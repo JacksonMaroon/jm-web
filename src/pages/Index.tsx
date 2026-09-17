@@ -62,7 +62,6 @@ const Index = () => {
         <article className="compact-project">
           <div className="compact-role"><h3>Think-cell for Codex</h3><time>2026</time></div>
           <p>Turn new data into editable PowerPoint charts. A Codex plugin that reuses existing think-cell designs, updates chart data, and checks the result.</p>
-          <a className="compact-case" href="/thoughts/thinkcell-codex">Read the case study <span aria-hidden="true">↗</span></a>
         </article>
       </section>
 
