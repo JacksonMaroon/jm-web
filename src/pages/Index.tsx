@@ -2,6 +2,12 @@ import { useState } from "react";
 import Seo from "@/components/Seo";
 import "./condensed.css";
 
+const LinkArrow = () => (
+  <svg className="compact-link-arrow" width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+    <path d="M4 12 12 4M4 4h8v8" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
+
 type Theme = "system" | "light" | "dark";
 const Index = () => {
   const [theme, setTheme] = useState<Theme>(() => {
@@ -25,9 +31,9 @@ const Index = () => {
           <p className="compact-intro">AI-native generalist</p>
           <p className="compact-location">New York, NY</p>
           <nav aria-label="Contact">
-            <a href="mailto:jackson.maroon4+website@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/JacksonMaroon" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:jackson.maroon4+website@gmail.com">Email <LinkArrow /></a>
+            <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn <LinkArrow /></a>
+            <a href="https://github.com/JacksonMaroon" target="_blank" rel="noreferrer">GitHub <LinkArrow /></a>
           </nav>
         </div>
         <span className="compact-portrait">
@@ -60,7 +66,7 @@ const Index = () => {
       <section className="compact-section" aria-labelledby="building-heading">
         <h2 id="building-heading">Building</h2>
         <article className="compact-project">
-          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">Thinkcell Autopilot</a></h3><time>2026</time></div>
+          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">Thinkcell Autopilot <LinkArrow /></a></h3><time>2026</time></div>
           <p>Let your AI agent handle the charts.</p>
         </article>
       </section>

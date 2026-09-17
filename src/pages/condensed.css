@@ -59,3 +59,5 @@
   .compact-site:not([data-theme="light"]) .portrait-light { display: none; }
   .compact-site:not([data-theme="light"]) .portrait-dark { display: block; }
 }
+
+.compact-link-arrow { display: inline-block; width: 12px; height: 12px; margin-left: 3px; vertical-align: -1px; color: var(--subtle); }
