@@ -25,7 +25,7 @@ const Index = () => {
           <h1>Jackson Maroon<span>.</span></h1>
           <p className="compact-intro">AI-native generalist.</p>
           <nav aria-label="Contact">
-            <a href="mailto:jackson.maroon4@gmail.com">Email ↗</a>
+            <a href="mailto:jackson.maroon4+website@gmail.com">Email ↗</a>
             <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn ↗</a>
             <a href="https://github.com/JacksonMaroon" target="_blank" rel="noreferrer">GitHub ↗</a>
           </nav>

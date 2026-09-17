@@ -47,7 +47,7 @@ type SocialLink = {
 
 const socialLinks: SocialLink[] = [
   {
-    href: "mailto:jackson.maroon4@gmail.com",
+    href: "mailto:jackson.maroon4+website@gmail.com",
     label: "Email Jackson",
     icon: Mail,
   },
