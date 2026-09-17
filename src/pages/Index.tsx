@@ -28,7 +28,6 @@ const Index = () => {
       <header className="compact-header">
         <div>
           <h1>Jackson Maroon</h1>
-          <p className="compact-intro">AI-native generalist</p>
           <p className="compact-location">New York, NY</p>
           <nav aria-label="Contact">
             <a href="mailto:jackson.maroon4+website@gmail.com">Email <LinkArrow /></a>
@@ -48,7 +47,7 @@ const Index = () => {
           <article>
             <h3>Kearney</h3>
             <div className="compact-timeline">
-              <div className="compact-role"><p>Business Analyst</p><time>Current</time></div>
+              <div className="compact-role"><p>Business Analyst</p><time>Present</time></div>
               <div className="compact-role"><p>Summer Business Analyst</p><time>Jun – Aug 2025</time></div>
             </div>
           </article>
@@ -66,7 +65,7 @@ const Index = () => {
       <section className="compact-section" aria-labelledby="building-heading">
         <h2 id="building-heading">Building</h2>
         <article className="compact-project">
-          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">Thinkcell Autopilot <LinkArrow /></a></h3><time>2026</time></div>
+          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">Thinkcell Autopilot <LinkArrow /></a></h3></div>
           <p>Let your AI agent handle the charts.</p>
         </article>
       </section>
