@@ -67,3 +67,6 @@
   .compact-header { gap: 12px; }
   .compact-header h1 { font-size: 26px; letter-spacing: -1.2px; }
 }
+
+.compact-project h3 a, .compact-learning p a { display: inline-block; padding: 4px 0; margin: -4px 0; }
+.compact-page:focus { outline: none; }
