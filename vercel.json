@@ -3,8 +3,16 @@
     {
       "src": "^/$",
       "has": [{ "type": "header", "key": "accept", "value": "text/markdown" }],
+      "missing": [{ "type": "host", "value": "www\\.jacksonmaroon\\.com" }],
       "dest": "/agent-profile.md",
-      "headers": { "Content-Type": "text/markdown; charset=utf-8", "Vary": "Accept" }
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8",
+        "Vary": "Accept",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "DENY",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+      }
     }
   ],
   "redirects": [
