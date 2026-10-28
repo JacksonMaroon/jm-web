@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate:favicons && vite build",
+    "build": "npm run generate:favicons && vite build && node scripts/prerender-home.mjs",
     "predev": "npm run generate:favicons",
     "build:dev": "vite build --mode development",
     "generate:favicons": "node scripts/generate-favicons.mjs",

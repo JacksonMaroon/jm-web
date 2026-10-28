@@ -1,0 +1,26 @@
+# Jackson Maroon
+
+> Jackson Maroon is a business analyst at Kearney in New York and an independent AI builder. He graduated from Washington and Lee University with a B.S. in Business Administration and a minor in Data Science.
+
+## Professional background
+
+- Kearney: Business Analyst; previously Summer Business Analyst, June–August 2025.
+- University of Pennsylvania: NIH Summer Intern, May–July 2024.
+- Washington and Lee Office of Health Promotion: Assistant to Director, September 2023–May 2026.
+- Washington and Lee University: Head AI Fellow and Student Consulting Lead; National Merit Scholar.
+
+## Selected work
+
+- [Thinkcell Autopilot / Think-cell for Codex](https://github.com/JacksonMaroon/thinkcell-codex): An independent Codex plugin for creating and updating editable think-cell charts in PowerPoint using existing chart designs and data. The project requires Windows, desktop PowerPoint, and licensed think-cell. See its repository for supported operations and limitations.
+
+## Credentials
+
+- [Claude Certified Architect – Foundations](https://www.credly.com/badges/d34bae5a-f575-4db4-bb23-399ccc15be5c/public_url), Anthropic, 2026.
+- [AGI Strategy](https://bluedot.org/certification?id=reci5N4KkVwv937S4), BlueDot Impact, 2026.
+
+## Primary sources and contact
+
+- [Portfolio](https://jacksonmaroon.com/)
+- [LinkedIn](https://www.linkedin.com/in/jacksonmaroon)
+- [GitHub](https://github.com/JacksonMaroon)
+- Email: jackson.maroon4+website@gmail.com
