@@ -1,4 +1,12 @@
 {
+  "routes": [
+    {
+      "src": "^/$",
+      "has": [{ "type": "header", "key": "accept", "value": "text/markdown" }],
+      "dest": "/agent-profile.md",
+      "headers": { "Content-Type": "text/markdown; charset=utf-8", "Vary": "Accept" }
+    }
+  ],
   "redirects": [
     {
       "source": "/:path*",
@@ -31,6 +39,14 @@
     }
   ],
   "headers": [
+    {
+      "source": "/",
+      "headers": [{ "key": "Vary", "value": "Accept" }]
+    },
+    {
+      "source": "/agent-profile.md",
+      "headers": [{ "key": "Content-Type", "value": "text/markdown; charset=utf-8" }]
+    },
     {
       "source": "/(.*)",
       "headers": [
