@@ -14,11 +14,6 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "has": [{ "type": "header", "key": "accept", "value": "text/markdown" }],
-      "destination": "/agent-profile.md"
-    },
-    {
       "source": "/thoughts/thinkcell-codex",
       "destination": "/"
     },
@@ -36,14 +31,6 @@
     }
   ],
   "headers": [
-    {
-      "source": "/",
-      "headers": [{ "key": "Vary", "value": "Accept" }]
-    },
-    {
-      "source": "/agent-profile.md",
-      "headers": [{ "key": "Content-Type", "value": "text/markdown; charset=utf-8" }]
-    },
     {
       "source": "/(.*)",
       "headers": [
