@@ -25,7 +25,7 @@ const Index = () => {
     <Seo title="Jackson Maroon" description="Jackson Maroon is a New York-based Kearney business analyst and independent AI builder with a background in business and data science." canonical="https://jacksonmaroon.com/" />
     <a className="compact-skip" href="#content">Skip to content</a>
     <main id="content" className="compact-page" tabIndex={-1}>
-      <header className="compact-header">
+      <div className="compact-header">
         <div>
           <h1>Jackson Maroon</h1>
           <p className="compact-location">New York, NY</p>
@@ -39,7 +39,7 @@ const Index = () => {
           <img className="portrait-light" src="/professional-headshot.jpg" alt="Professional headshot of Jackson Maroon" width="80" height="80" />
           <img className="portrait-dark" src="/professional-studio.jpg" alt="Professional headshot of Jackson Maroon" width="80" height="80" />
         </span>
-      </header>
+      </div>
 
       <section className="compact-section" aria-labelledby="experience-heading">
         <h2 id="experience-heading">Experience</h2>

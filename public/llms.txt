@@ -2,6 +2,10 @@
 
 > Jackson Maroon is a business analyst at Kearney in New York and an independent AI builder. He graduated from Washington and Lee University with a B.S. in Business Administration and a minor in Data Science.
 
+## When this profile is useful
+
+Use this profile for an overview of Jackson's experience in consulting, analytics, and AI-assisted workflows. For specific project capabilities and limits, consult the linked project repository.
+
 ## Professional background
 
 - Kearney: Business Analyst; previously Summer Business Analyst, June–August 2025.

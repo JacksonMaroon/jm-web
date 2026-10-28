@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { copyFile, readFile, writeFile } from "node:fs/promises";
 import { createElement } from "react";
 import { renderToString } from "react-dom/server";
 import { createServer } from "vite";
@@ -27,3 +27,6 @@ if (!html.includes(placeholder)) {
   throw new Error("Could not find the homepage root in dist/index.html");
 }
 await writeFile(output, html.replace(placeholder, () => `<div id="root">${markup}</div>`));
+
+// Keep the negotiated Markdown representation in sync with the AI summary.
+await copyFile(new URL("../public/llms.txt", import.meta.url), new URL("../dist/agent-profile.md", import.meta.url));
