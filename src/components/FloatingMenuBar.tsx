@@ -1,7 +1,7 @@
 import { useEffect, useState, type ComponentType, type SVGProps } from "react";
 import { Button } from "@/components/ui/button";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
-import { Moon, Sun } from "lucide-react";
+import { Mail, Moon, Sun } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const LinkedInLogo = ({ className, ...props }: SVGProps<SVGSVGElement>) => (
@@ -46,6 +46,11 @@ type SocialLink = {
 };
 
 const socialLinks: SocialLink[] = [
+  {
+    href: "mailto:hi@jacksonmaroon.com",
+    label: "Email Jackson",
+    icon: Mail,
+  },
   {
     href: "https://linkedin.com/in/jacksonmaroon",
     label: "LinkedIn",
