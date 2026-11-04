@@ -30,7 +30,6 @@ const Index = () => {
           <h1>Jackson Maroon</h1>
           <p className="compact-location">New York, NY</p>
           <nav aria-label="Contact">
-            <a href="mailto:jackson.maroon4+website@gmail.com">Email <LinkArrow /></a>
             <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn <LinkArrow /></a>
             <a href="https://github.com/JacksonMaroon" target="_blank" rel="noreferrer">GitHub <LinkArrow /></a>
           </nav>
