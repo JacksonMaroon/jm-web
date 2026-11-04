@@ -30,7 +30,7 @@ const Index = () => {
           <h1>Jackson Maroon</h1>
           <p className="compact-location">New York, NY</p>
           <nav aria-label="Contact">
-            <a href="mailto:hi@jacksonmaroon.com">Email <LinkArrow /></a>
+            <a href="mailto:hi@jacksonmaroon.com">Email</a>
             <a href="https://www.linkedin.com/in/jacksonmaroon" target="_blank" rel="noreferrer">LinkedIn <LinkArrow /></a>
             <a href="https://github.com/JacksonMaroon" target="_blank" rel="noreferrer">GitHub <LinkArrow /></a>
           </nav>
@@ -47,7 +47,7 @@ const Index = () => {
           <article>
             <h3>Kearney</h3>
             <div className="compact-timeline">
-              <div className="compact-role"><p>Business Analyst</p><time>Present</time></div>
+              <div className="compact-role"><p>Business Analyst</p><time>Jul 2026 – Present</time></div>
               <div className="compact-role"><p>Summer Business Analyst</p><time>Jun – Aug 2025</time></div>
             </div>
           </article>
@@ -65,7 +65,7 @@ const Index = () => {
       <section className="compact-section" aria-labelledby="building-heading">
         <h2 id="building-heading">Building</h2>
         <article className="compact-project">
-          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">Thinkcell Autopilot <LinkArrow /></a></h3></div>
+          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">think-cell Autopilot <LinkArrow /></a></h3></div>
           <p>Let your AI agent handle the charts.</p>
         </article>
       </section>
@@ -81,7 +81,7 @@ const Index = () => {
       </section>
 
       <section className="compact-section compact-learning" aria-labelledby="learning-heading">
-        <h2 id="learning-heading">Learning</h2>
+        <h2 id="learning-heading">Certifications</h2>
         <div>
           <p><a href="https://www.credly.com/badges/d34bae5a-f575-4db4-bb23-399ccc15be5c/public_url" target="_blank" rel="noreferrer">Claude Certified Architect – Foundations <LinkArrow /></a> <span>Anthropic · 2026</span></p>
           <p><a href="https://bluedot.org/certification?id=reci5N4KkVwv937S4" target="_blank" rel="noreferrer">AGI Strategy <LinkArrow /></a> <span>BlueDot Impact · 2026</span></p>

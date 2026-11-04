@@ -15,7 +15,7 @@ Use this profile for an overview of Jackson's experience in consulting, analytic
 
 ## Selected work
 
-- [Thinkcell Autopilot / Think-cell for Codex](https://github.com/JacksonMaroon/thinkcell-codex): An independent Codex plugin for creating and updating editable think-cell charts in PowerPoint using existing chart designs and data. The project requires Windows, desktop PowerPoint, and licensed think-cell. See its repository for supported operations and limitations.
+- [think-cell Autopilot / think-cell for Codex](https://github.com/JacksonMaroon/thinkcell-codex): An independent Codex plugin for creating and updating editable think-cell charts in PowerPoint using existing chart designs and data. The project requires Windows, desktop PowerPoint, and licensed think-cell. See its repository for supported operations and limitations.
 
 ## Credentials
 
