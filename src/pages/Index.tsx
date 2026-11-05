@@ -37,7 +37,7 @@ const Index = () => {
         </div>
         <span className="compact-portrait">
           <img className="portrait-light" src="/professional-headshot.jpg" alt="Professional headshot of Jackson Maroon" width="80" height="80" />
-          <img className="portrait-dark" src="/professional-studio.jpg" alt="Professional headshot of Jackson Maroon" width="80" height="80" />
+          <img className="portrait-dark" src="/professional-studio-cutout.webp" alt="Professional headshot of Jackson Maroon" width="80" height="80" />
         </span>
       </div>
 

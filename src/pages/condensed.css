@@ -13,7 +13,7 @@
 .compact-header h1 span { color: var(--link); }
 .compact-portrait { position: relative; display: block; flex-shrink: 0; overflow: hidden; border-radius: 50%; width: 72px; height: 72px; margin-top: 0; }
 .compact-portrait .portrait-light { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; }
-.compact-portrait .portrait-dark { display: none; position: absolute; width: 225%; max-width: none; height: auto; left: -70%; top: -24%; }
+.compact-portrait .portrait-dark { display: none; width: 100%; height: 100%; object-fit: cover; }
 .compact-header nav a { position: relative; white-space: nowrap; }
 .compact-header nav a::after { content: ""; position: absolute; inset: -13px -8px; }
 .compact-header nav { display: flex; gap: 23px; margin-top: 18px; font-size: 12px; font-weight: 500; }
