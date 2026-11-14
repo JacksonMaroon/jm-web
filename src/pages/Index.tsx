@@ -68,6 +68,14 @@ const Index = () => {
           <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/thinkcell-codex" target="_blank" rel="noreferrer">think-cell Autopilot <LinkArrow /></a></h3></div>
           <p>Let your AI agent handle the charts.</p>
         </article>
+        <article className="compact-project">
+          <div className="compact-role"><h3>Personal MCP servers</h3></div>
+          <p>Connectors that give Claude and ChatGPT read and write access to my own apps, with OAuth, conditional writes and conflict checks.</p>
+        </article>
+        <article className="compact-project">
+          <div className="compact-role"><h3><a href="https://github.com/JacksonMaroon/nyclandlordcheck" target="_blank" rel="noreferrer">NYC landlord data <LinkArrow /></a></h3></div>
+          <p>Public building, violation and ownership records, joined through entity resolution in PostGIS.</p>
+        </article>
       </section>
 
       <section className="compact-section" aria-labelledby="education-heading">

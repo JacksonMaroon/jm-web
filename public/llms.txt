@@ -16,6 +16,8 @@ Use this profile for an overview of Jackson's experience in consulting, analytic
 ## Selected work
 
 - [think-cell Autopilot / think-cell for Codex](https://github.com/JacksonMaroon/thinkcell-codex): An independent Codex plugin for creating and updating editable think-cell charts in PowerPoint using existing chart designs and data. The project requires Windows, desktop PowerPoint, and licensed think-cell. See its repository for supported operations and limitations.
+- Personal MCP servers: connectors that give Claude and ChatGPT read and write access to Jackson's own apps, with OAuth, conditional writes and conflict checks. Repositories are private.
+- [NYC landlord data](https://github.com/JacksonMaroon/nyclandlordcheck): a prototype that joins public NYC building, violation and ownership records through entity resolution in PostgreSQL/PostGIS. Live operation and data freshness are not guaranteed.
 
 ## Credentials
 
